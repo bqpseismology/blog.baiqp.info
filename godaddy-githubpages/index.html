@@ -86,7 +86,7 @@
 
 <meta itemprop="datePublished" content="2018-04-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-04-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="231">
+<meta itemprop="wordCount" content="54">
 
 
 
@@ -189,7 +189,7 @@
               <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"> 博客框架 </a>
             
           </div>
-        <span class="more-meta"> 约 231 字 </span>
+        <span class="more-meta"> 约 54 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -201,17 +201,7 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#链接">链接：</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+    
   </div>
 </div>
 
@@ -222,62 +212,6 @@
 <p>使用 <code>Hugo</code> 编译后的静态博客，在 <code>GitHub Pages</code> 上发布，可以直接在 <code>https://username.github.io</code> 查看。当然一些人想使用自定义域名，可以通过 <a href="https://sg.godaddy.com/zh" target="_blank">Godaddy</a> 申请一个域名。</p>
 
 <p></p>
-
-<p>申请域名后，可以通过将域名和<code>GitHub</code>的仓库绑定，则<code>GitHub Pages</code>的网页域名解析为自定义域名。具体做法如下，进入DNS管理，修改记录如下：</p>
-
-<table>
-<thead>
-<tr>
-<th align="left">类型</th>
-<th align="center">名称</th>
-<th>值</th>
-<th align="right">TTL</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">A</td>
-<td align="center">@</td>
-<td>192.30.252.153</td>
-<td align="right">1小时</td>
-</tr>
-
-<tr>
-<td align="left">CNAME</td>
-<td align="center">www</td>
-<td>bqpseismology.github.io</td>
-<td align="right">1小时</td>
-</tr>
-
-<tr>
-<td align="left">&hellip;</td>
-<td align="center"></td>
-<td></td>
-<td align="right"></td>
-</tr>
-</tbody>
-</table>
-
-<p><strong>访问我的博客，<a href="http://baiqp.info" target="_blank">请戳这里</a></strong></p>
-
-<hr />
-
-<p><strong>❗️ 注意：</strong></p>
-
-<ul>
-<li>不要使用默认的CNAME的记录，将默认的删去，否则会影响<code>GithHub Pages</code>的正确解析。</li>
-<li>使用 <code>http://</code> 访问，使用 <code>https://</code> 访问会出现错误。</li>
-</ul>
-
-<hr />
-
-<h3 id="链接">链接：</h3>
-
-<ul>
-<li><a href="https://account.godaddy.com/products/#/" target="_blank">GoDaddy</a></li>
-<li><a href="https://github.com" target="_blank">GitHub</a></li>
-</ul>
     </div>
 
     
@@ -330,6 +264,11 @@
       
       <nav class="post-nav">
         
+          <a class="prev" href="/hugo-centos/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Hugo安装配置</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         
           <a class="next" href="/aftrshock-visualization/">
             <span class="next-text nav-default">新西兰地震余震可视化</span>
