@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机科学 on Qipeng Bai</title>
+    <link>http://blog.baiqp.info/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</link>
+    <description>Recent content in 计算机科学 on Qipeng Bai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Qipeng Bai (All right reserved)</copyright>
+    <lastBuildDate>Mon, 02 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.baiqp.info/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>新西兰地震余震可视化</title>
+      <link>http://blog.baiqp.info/aftrshock-visualization/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/aftrshock-visualization/</guid>
+      <description>&lt;hr /&gt;
+
+&lt;p&gt;地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>地震时间处理</title>
+      <link>http://blog.baiqp.info/date-process/</link>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/date-process/</guid>
+      <description>&lt;hr /&gt;
+
+&lt;p&gt;通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
