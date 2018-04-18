@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://blog.baiqp.info/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.baiqp.info/collections/</loc>
+    <lastmod>2014-11-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/links/</loc>
+    <lastmod>2016-05-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/donations/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/about/</loc>
+    <lastmod>2014-09-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/hugo-centos/</loc>
+    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/godaddy-githubpages/</loc>
+    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/aftrshock-visualization/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/date-process/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/southkorea-earthquake/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/hello-world/</loc>
+    <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/cap/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/hugo/</loc>
+    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/post/</loc>
+    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/python/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/</loc>
+    <lastmod>2014-11-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/README/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/shell/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2018-04-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/%E5%9C%B0%E9%9C%87/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2018-04-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
