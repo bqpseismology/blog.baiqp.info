@@ -3,7 +3,7 @@
 
 <!--more-->
 
-## 1. Hugo安装配置
+## 1.Hugo安装配置
 
 具体可参考官方[中文参考文档](http://www.gohugo.org/)
 
@@ -15,7 +15,7 @@
 
 注意 `Go` 的高版本编译需要 `Go 1.4` 作为初始编译器，因此要先安装后再安装高版本，可参考 [Go高版本安装](https://blog.csdn.net/beyond__devil/article/details/68064202) 。
 
-### 1.1 让go get显示进度
+### 1.1让go get显示进度
 
 在使用 Go 下载 github 的包比较大时，需要让屏幕显示进度，可以通过修改 Go 源码来实现。打开 `/usr/local/go/src/cmd/go/vcs.go` 文件，如下修改:
 
