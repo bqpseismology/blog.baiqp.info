@@ -1,6 +1,6 @@
 -----
 
-申请到顶级域名后，可以将二级域名和 GitHub Pages 的项目仓库进行绑定，做到分仓库管理网站。这样可以再不修改主站的情况下对不同工作进行分类汇总。
+申请到顶级域名后，可以将二级域名和 GitHub Pages 的项目仓库进行绑定，做到分仓库管理网站。这样可以在不修改主站的情况下对不同工作进行分类汇总。
 
 <!--more-->
 
@@ -38,7 +38,7 @@
 - Markdown 语法参考<sup>[[01]](#ref01)</sup>
 - 图片引用的名称和 `images/` 下的命名保持一致；
 - 表格的格式要注意，具体格式如下：
-使用 `Markdown` 画的表格，如下表👇
+使用 `Markdown` 画的表格，如下表👇（**冒号表示对齐**）
 
 | col. 1        | col. 2        | col. 3  |
 | :------------ |:-------------:| -------:|
@@ -49,15 +49,15 @@
 或
 
 | col. 1        | col. 2        | col. 3  |
-|:--------------|:--------------|：-------|
+| :------------ |:------------- | :-------|
 | col 3 is      | right-aligned | $1600   |
 | col 2 is      | centered      |   $12   |
 | zebra stripes | are neat      |    $1   |
 
-- 在上传到 GitHUb Pages 项目 `gh-pages` 时，可以先清空远程分支，再上传（效果还要验证）；
+- 在上传到 GitHub Pages 项目 `gh-pages` 时，可以先清空远程分支，再上传（效果还要验证）；
 
 -----
 
 ## 参考资料
 
-1. <a id="ref01">[Even 帮助](https://blog.olowolo.com/example-site/post/even-preview/#ref01)</a>
+1. <a id="ref01">[Even Markdown帮助](https://blog.olowolo.com/example-site/post/even-preview/#ref01)</a>
