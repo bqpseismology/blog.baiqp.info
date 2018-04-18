@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Mon, 02 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>自定义域名</title>
+      <link>http://blog.baiqp.info/godaddy-githubpages/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/godaddy-githubpages/</guid>
+      <description>&lt;hr /&gt;
+
+&lt;p&gt;使用 &lt;code&gt;Hugo&lt;/code&gt; 编译后的静态博客，在 &lt;code&gt;GitHub Pages&lt;/code&gt; 上发布，可以直接在 &lt;code&gt;https://username.github.io&lt;/code&gt; 查看。当然一些人想使用自定义域名，可以通过 &lt;a href=&#34;https://sg.godaddy.com/zh&#34; target=&#34;_blank&#34;&gt;Godaddy&lt;/a&gt; 申请一个域名。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>新西兰地震余震可视化</title>
