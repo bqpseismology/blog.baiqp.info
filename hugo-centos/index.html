@@ -86,7 +86,7 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
 
 <meta itemprop="datePublished" content="2018-04-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-04-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="436">
+<meta itemprop="wordCount" content="43">
 
 
 
@@ -189,7 +189,7 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
               <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"> 博客框架 </a>
             
           </div>
-        <span class="more-meta"> 约 436 字 </span>
+        <span class="more-meta"> 约 43 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -205,11 +205,7 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
 <ul>
 <li>
 <ul>
-<li><a href="#1-hugo安装配置">1. Hugo安装配置</a>
-<ul>
-<li><a href="#1-1-让-go-get-显示进度">1.1 让 go get 显示进度</a></li>
-<li><a href="#1-2-安装-pandoc">1.2 安装 pandoc</a></li>
-</ul></li>
+<li><a href="#1-hugo安装配置">1. Hugo安装配置</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -225,55 +221,6 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
 <p></p>
 
 <h2 id="1-hugo安装配置">1. Hugo安装配置</h2>
-
-<p>具体可参考官方<a href="http://www.gohugo.org/" target="_blank">中文参考文档</a></p>
-
-<p>直接安装步骤如下：</p>
-
-<ul>
-<li>从<a href="https://github.com/spf13/hugo/releases" target="_blank">Hugo Releases</a>下载对应操作系统的<code>Hugo</code>二进制文件，放在<code>/bin/</code>目录下运行</li>
-<li>安装依赖工具： Git， Mercruial， Go(1.3+)</li>
-<li>安装 <a href="https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions" target="_blank">Visual Studio Code</a> ，方便修改代码</li>
-</ul>
-
-<p>注意 <code>Go</code> 的高版本编译需要 <code>Go 1.4</code> 作为初始编译器，因此要先安装后再安装高版本，可参考 <a href="https://blog.csdn.net/beyond__devil/article/details/68064202" target="_blank">Go高版本安装</a> 。</p>
-
-<h3 id="1-1-让-go-get-显示进度">1.1 让 go get 显示进度</h3>
-
-<p>在使用 Go 下载 github 的包比较大时，需要让屏幕显示进度，可以通过修改 Go 源码来实现。打开 <code>/usr/local/go/src/cmd/go/vcs.go</code> 文件，如下修改:</p>
-
-<pre><code class="language-go">// vcsGit describes how to use Git.
-var vcsGit = &amp;vcsCmd{
-	name: &quot;Git&quot;,
-	cmd:  &quot;git&quot;,
-
-	createCmd:   &quot;clone {repo} {dir}&quot;, // 此处修改为 clone --progress {repo} {dir} update --init --recursive&quot;},
-</code></pre>
-
-<pre><code class="language-go">var buf bytes.Buffer
-	cmd.Stdout = &amp;buf
-	cmd.Stderr = &amp;buf
-	cmd.Stdout = os.Stdout // 重定向标准输出
-	cmd.Stderr = os.Stderr // 重定向标准输出
-	err = cmd.Run()
-</code></pre>
-
-<p>然后运行 <code>src/all.bash</code> 重新编译 Go，等编译完成后使用 <code>go get</code> 可以看到进度条。</p>
-
-<h3 id="1-2-安装-pandoc">1.2 安装 pandoc</h3>
-
-<p>使用二进制包安装，具体流程如下：</p>
-
-<pre><code>$ wget -c https://github.com/jgm/pandoc/releases/download/2.1.3/pandoc-2.1.3-linux.tar.gz
-$ tar -zxvf pandoc-2.1.3-linux.tar.gz
-$ su
-# mv pandoc-2.1.3 /usr/local/
-$ vim ~/.bashrc
-At the end of the file, add “export PATH=/usr/local/pandoc-2.1.3/bin:${PATH}”
-$ source ~/.bashrc
-</code></pre>
-
-<hr />
     </div>
 
     
