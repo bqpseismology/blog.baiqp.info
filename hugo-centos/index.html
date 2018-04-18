@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>自定义域名 - Qipeng Bai</title>
+  <title>Hugo安装配置 - Qipeng Bai</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="Qipeng Bai" />
-  <meta name="description" content="使用 Hugo 编译后的静态博客，在 GitHub Pages 上发布，可以直接在 https://username.github.io 查看。当然一些人想使用自定义域名，可以通过 Godaddy 申请一个域名。
+  <meta name="description" content="Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。
 
 " />
 
@@ -31,7 +31,7 @@
 <meta name="generator" content="Hugo 0.38.2" />
 
 
-<link rel="canonical" href="http://blog.baiqp.info/godaddy-githubpages/" />
+<link rel="canonical" href="http://blog.baiqp.info/hugo-centos/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,14 +51,14 @@
 
 
 
-<meta property="og:title" content="自定义域名" />
+<meta property="og:title" content="Hugo安装配置" />
 <meta property="og:description" content="
 
-使用 Hugo 编译后的静态博客，在 GitHub Pages 上发布，可以直接在 https://username.github.io 查看。当然一些人想使用自定义域名，可以通过 Godaddy 申请一个域名。
+Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.baiqp.info/godaddy-githubpages/" />
+<meta property="og:url" content="http://blog.baiqp.info/hugo-centos/" />
 
 
 
@@ -76,26 +76,26 @@
 
 
 
-<meta itemprop="name" content="自定义域名">
+<meta itemprop="name" content="Hugo安装配置">
 <meta itemprop="description" content="
 
-使用 Hugo 编译后的静态博客，在 GitHub Pages 上发布，可以直接在 https://username.github.io 查看。当然一些人想使用自定义域名，可以通过 Godaddy 申请一个域名。
+Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。
 
 ">
 
 
 <meta itemprop="datePublished" content="2018-04-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-04-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="231">
+<meta itemprop="wordCount" content="889">
 
 
 
 <meta itemprop="keywords" content="Hugo," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="自定义域名"/>
+<meta name="twitter:title" content="Hugo安装配置"/>
 <meta name="twitter:description" content="
 
-使用 Hugo 编译后的静态博客，在 GitHub Pages 上发布，可以直接在 https://username.github.io 查看。当然一些人想使用自定义域名，可以通过 Godaddy 申请一个域名。
+Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。
 
 "/>
 
@@ -180,7 +180,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">自定义域名</h1>
+      <h1 class="post-title">Hugo安装配置</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2018-04-17 </span>
@@ -189,8 +189,8 @@
               <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"> 博客框架 </a>
             
           </div>
-        <span class="more-meta"> 约 231 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 889 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -205,10 +205,19 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#1-hugo安装配置">1. Hugo安装配置</a>
 <ul>
-<li><a href="#链接">链接：</a></li>
+<li><a href="#1-1-让-go-get-显示进度">1.1 让 go get 显示进度</a></li>
+<li><a href="#1-2-安装-pandoc">1.2 安装 pandoc</a></li>
 </ul></li>
+<li><a href="#2-主题安装">2. 主题安装</a></li>
+<li><a href="#3-字体修改">3. 字体修改</a>
+<ul>
+<li><a href="#3-1-字体安装">3.1 字体安装</a></li>
+<li><a href="#3-2-字体修改">3.2 字体修改</a></li>
+</ul></li>
+<li><a href="#4-网站图标修改">4. 网站图标修改</a></li>
+<li><a href="#5-hugo-站点说明">5. Hugo 站点说明</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -219,65 +228,139 @@
     <div class="post-content">
       <hr />
 
-<p>使用 <code>Hugo</code> 编译后的静态博客，在 <code>GitHub Pages</code> 上发布，可以直接在 <code>https://username.github.io</code> 查看。当然一些人想使用自定义域名，可以通过 <a href="https://sg.godaddy.com/zh" target="_blank">Godaddy</a> 申请一个域名。</p>
+<p><code>Hugo</code> 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。</p>
 
 <p></p>
 
-<p>申请域名后，可以通过将域名和<code>GitHub</code>的仓库绑定，则<code>GitHub Pages</code>的网页域名解析为自定义域名。具体做法如下，进入DNS管理，修改记录如下：</p>
+<h2 id="1-hugo安装配置">1. Hugo安装配置</h2>
 
-<table>
-<thead>
-<tr>
-<th align="left">类型</th>
-<th align="center">名称</th>
-<th>值</th>
-<th align="right">TTL</th>
-</tr>
-</thead>
+<p>具体可参考官方<a href="http://www.gohugo.org/" target="_blank">中文参考文档</a></p>
 
-<tbody>
-<tr>
-<td align="left">A</td>
-<td align="center">@</td>
-<td>192.30.252.153</td>
-<td align="right">1小时</td>
-</tr>
+<p>直接安装步骤如下：</p>
 
-<tr>
-<td align="left">CNAME</td>
-<td align="center">www</td>
-<td>bqpseismology.github.io</td>
-<td align="right">1小时</td>
-</tr>
+<ul>
+<li>从<a href="https://github.com/spf13/hugo/releases" target="_blank">Hugo Releases</a>下载对应操作系统的<code>Hugo</code>二进制文件，放在<code>/bin/</code>目录下运行</li>
+<li>安装依赖工具： Git， Mercruial， Go(1.3+)</li>
+<li>安装 <a href="https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions" target="_blank">Visual Studio Code</a> ，方便修改代码</li>
+</ul>
 
-<tr>
-<td align="left">&hellip;</td>
-<td align="center"></td>
-<td></td>
-<td align="right"></td>
-</tr>
-</tbody>
-</table>
+<p>注意 <code>Go</code> 的高版本编译需要 <code>Go 1.4</code> 作为初始编译器，因此要先安装后再安装高版本，可参考 <a href="https://blog.csdn.net/beyond__devil/article/details/68064202" target="_blank">Go高版本安装</a> 。</p>
 
-<p><strong>访问我的博客，<a href="http://baiqp.info" target="_blank">请戳这里</a></strong></p>
+<h3 id="1-1-让-go-get-显示进度">1.1 让 go get 显示进度</h3>
+
+<p>在使用 Go 下载 github 的包比较大时，需要让屏幕显示进度，可以通过修改 Go 源码来实现。打开 <code>/usr/local/go/src/cmd/go/vcs.go</code> 文件，如下修改:</p>
+
+<pre><code class="language-go">// vcsGit describes how to use Git.
+var vcsGit = &amp;vcsCmd{
+	name: &quot;Git&quot;,
+	cmd:  &quot;git&quot;,
+
+	createCmd:   &quot;clone {repo} {dir}&quot;, // 此处修改为 clone --progress {repo} {dir} update --init --recursive&quot;},
+</code></pre>
+
+<pre><code class="language-go">var buf bytes.Buffer
+	cmd.Stdout = &amp;buf
+	cmd.Stderr = &amp;buf
+	cmd.Stdout = os.Stdout // 重定向标准输出
+	cmd.Stderr = os.Stderr // 重定向标准输出
+	err = cmd.Run()
+</code></pre>
+
+<p>然后运行 <code>src/all.bash</code> 重新编译 Go，等编译完成后使用 <code>go get</code> 可以看到进度条。</p>
+
+<h3 id="1-2-安装-pandoc">1.2 安装 pandoc</h3>
+
+<p>使用二进制包安装，具体流程如下：</p>
+
+<pre><code>$ wget -c https://github.com/jgm/pandoc/releases/download/2.1.3/pandoc-2.1.3-linux.tar.gz
+$ tar -zxvf pandoc-2.1.3-linux.tar.gz
+$ su
+# mv pandoc-2.1.3 /usr/local/
+$ vim ~/.bashrc
+At the end of the file, add “export PATH=/usr/local/pandoc-2.1.3/bin:${PATH}”
+$ source ~/.bashrc
+</code></pre>
 
 <hr />
 
-<p><strong>❗️ 注意：</strong></p>
+<h2 id="2-主题安装">2. 主题安装</h2>
+
+<p>参考 <a href="https://github.com/seisman/hugo-theme-even" target="_blank">even</a></p>
 
 <ul>
-<li>不要使用默认的CNAME的记录，将默认的删去，否则会影响<code>GithHub Pages</code>的正确解析。</li>
-<li>使用 <code>http://</code> 访问，使用 <code>https://</code> 访问会出现错误。</li>
+<li>修改 <code>/themes/even/src/css/</code> 目录下的版本文件，调整了网页的样式。</li>
+<li>修改 <code>/themes/even/src/fonts/</code> 目录下的字体文件及 <code>/themes/even/src/css/_custom/</code> 的 <code>_custom.scss</code> 文件个性化定制页面。</li>
+</ul>
+
+<p>注意修改 <code>/themes/even/src/</code> 内任一文件时，要再次编译，编译命令如下：</p>
+
+<pre><code>$ cd src/
+$ npm install
+$ npm run build
+</code></pre>
+
+<hr />
+
+<h2 id="3-字体修改">3. 字体修改</h2>
+
+<h3 id="3-1-字体安装">3.1 字体安装</h3>
+
+<p>字体转换工具可使用 <a href="https://everythingfonts.com/" target="_blank">Everthing Fonts</a></p>
+
+<p><strong>Abode Source Code Pro</strong></p>
+
+<pre><code>$ sudo yum install adobe-source-code-pro-fonts
+$ cd /usr/share/fonts/adobe-source-code-pro
+</code></pre>
+
+<h3 id="3-2-字体修改">3.2 字体修改</h3>
+
+<p>字体修改可参考 <a href="https://www.w3cplus.com/content/css3-font-face" target="_blank">CSS3@font-face</a>，修改 <code>/themes/even/src/css/_custom/_custom.scss</code> 的字体变量列表，具体不再列出。</p>
+
+<p>执行 <code>npm install</code>， <code>npm run build</code> 会报错 <code>Unexpected character '' (1:0)</code>，可通过如下办法解决：</p>
+
+<pre><code>$ vim /themes/even_m/src/webpack.config.js
+// 添加如下语句
+{ 
+  test: /OpenSans-BoldItalic\.(woff|woff2|eot|ttf|otf|svg)$/,
+  use: 'file-loader?name=[path][name].[ext]'
+}
+</code></pre>
+
+<hr />
+
+<h2 id="4-网站图标修改">4. 网站图标修改</h2>
+
+<p>修改网站的图表，可修改 <code>themes/even/static/</code> 文件夹下的几个图片。也可在根目录 <code>static/</code> 中放置此类文件进行覆盖，优先级高于主题模版文件。</p>
+
+<ul>
+<li>android-chrome-192x192.png</li>
+<li>android-chrome-512x512.png</li>
+<li>apple-touch-icon.png</li>
+<li>browserconfig.xml</li>
+<li>favicon-16x16.png</li>
+<li>favicon-32x32.png</li>
+<li>manifest.json</li>
+<li>mstile-150x150.png</li>
+<li>safari-pinned-tab.svg</li>
 </ul>
 
 <hr />
 
-<h3 id="链接">链接：</h3>
+<h2 id="5-hugo-站点说明">5. Hugo 站点说明</h2>
+
+<p><a href="https://blog.coderzh.com/2015/08/29/hugo/" target="_blank">参考博客</a></p>
 
 <ul>
-<li><a href="https://account.godaddy.com/products/#/" target="_blank">GoDaddy</a></li>
-<li><a href="https://github.com" target="_blank">GitHub</a></li>
+<li><code>archetypes</code> ：存放default.md，头文件格式</li>
+<li><code>content</code> ：content目录存放博客文章（.markdown/.md文件）</li>
+<li><code>data</code> ：存放自定义模版，导入的toml文件（或json，yaml）</li>
+<li><code>layouts</code> ：layouts目录存放的是网站的模板文件</li>
+<li><code>static</code> ：static目录存放js/css/img等静态资源</li>
+<li><code>config.toml</code> ：config.toml是网站的配置文件</li>
 </ul>
+
+<hr />
     </div>
 
     
@@ -292,7 +375,7 @@
   </p>
   <p class="copyright-item">
       <span class="item-title">原始文档</span>
-      <span class="item-content"><a class="link-to-markdown" href="http://blog.baiqp.info/godaddy-githubpages/index.md" target="_blank">Markdown »</a></span>
+      <span class="item-content"><a class="link-to-markdown" href="http://blog.baiqp.info/hugo-centos/index.md" target="_blank">Markdown »</a></span>
     </p>
   <p class="copyright-item">
     <span class="item-title">许可协议</span>
@@ -330,14 +413,9 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/hugo-centos/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Hugo安装配置</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/aftrshock-visualization/">
-            <span class="next-text nav-default">新西兰地震余震可视化</span>
+          <a class="next" href="/godaddy-githubpages/">
+            <span class="next-text nav-default">自定义域名</span>
             <span class="prev-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
