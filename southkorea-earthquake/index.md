@@ -27,10 +27,10 @@ Origin Time: 2016-09-12 11:32:54.940 UTC
 
 **Crust1.0 CAPloc反演结果:**   
 {{% left %}}
-![CAPloc_2016-09-12_M4.9_Sou定：韩国庆州4.9级和5.4级地震】USGS正式测定：2016-09-12在韩国庆州境thKorea_mecherr.png](/images/2016-09-12-SouthKorea-earthquake/CAPloc_2016-09-12_M4.9_SouthKorea_mecherr.png) 
+![CAPloc_2016-09-12_M4.9_Sou定：韩国庆州4.9级和5.4级地震】USGS正式测定：2016-09-12在韩国庆州境thKorea_mecherr.png](/images/2016-09-12-southkorea-earthquake/CAPloc_2016-09-12_M4.9_SouthKorea_mecherr.png) 
 {{% left %}}
 {{% right %}}
-![](/images/2016-09-12-SouthKorea-earthquake/CAPloc_2016-09-12_M4.9_SouthKorea_vmodel_22.png)
+![](/images/2016-09-12-southkorea-earthquake/CAPloc_2016-09-12_M4.9_SouthKorea_vmodel_22.png)
 {{% right %}}
 
 **[(Kim et al., 1999)](https://www.researchgate.net/profile/Nadia_Kraeva/publication/264083188_Source_Parameter_Determination_of_Local_Earthquakes_in_Korea_Using_Moment_Tensor_Inversion_of_Single_Station_Data/links/54d8fe0f0cf24647581d2814.pdf) 文章中model C 速度模型CAPloc反演结果:**   
