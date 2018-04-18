@@ -49,6 +49,19 @@
     </item>
     
     <item>
+      <title>地震时间处理</title>
+      <link>http://blog.baiqp.info/date-process/</link>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/date-process/</guid>
+      <description>&lt;hr /&gt;
+
+&lt;p&gt;通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>韩国地震CAP机制解</title>
       <link>http://blog.baiqp.info/southkorea-earthquake/</link>
       <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
@@ -57,6 +70,21 @@
       <description>&lt;hr /&gt;
 
 &lt;p&gt;2016-09-12在韩国庆州境内发生两次地震，本文给出 &lt;strong&gt;CAP&lt;/strong&gt; 近震的机制解反演结果。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你好！</title>
+      <link>http://blog.baiqp.info/hello-world/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/hello-world/</guid>
+      <description>&lt;hr /&gt;
+
+&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。&lt;/p&gt;
+
+&lt;p&gt;本博客成立于 2018 年，主要关注地震学、计算机科学、深度学习、音乐与心理学的知识整理与分享。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
