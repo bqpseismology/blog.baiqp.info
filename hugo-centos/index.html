@@ -86,7 +86,7 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
 
 <meta itemprop="datePublished" content="2018-04-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-04-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="43">
+<meta itemprop="wordCount" content="880">
 
 
 
@@ -189,8 +189,8 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
               <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"> 博客框架 </a>
             
           </div>
-        <span class="more-meta"> 约 43 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 880 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -205,7 +205,19 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
 <ul>
 <li>
 <ul>
-<li><a href="#1-hugo安装配置">1. Hugo安装配置</a></li>
+<li><a href="#hugo安装配置">Hugo安装配置</a>
+<ul>
+<li><a href="#让-go-get-显示进度">让 go get 显示进度</a></li>
+<li><a href="#安装-pandoc">安装 pandoc</a></li>
+</ul></li>
+<li><a href="#主题安装">主题安装</a></li>
+<li><a href="#字体修改">字体修改</a>
+<ul>
+<li><a href="#字体安装">字体安装</a></li>
+<li><a href="#字体修改-1">字体修改</a></li>
+</ul></li>
+<li><a href="#网站图标修改">网站图标修改</a></li>
+<li><a href="#hugo-站点说明">Hugo 站点说明</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -220,7 +232,135 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单易用、高效、�
 
 <p></p>
 
-<h2 id="1-hugo安装配置">1. Hugo安装配置</h2>
+<h2 id="hugo安装配置">Hugo安装配置</h2>
+
+<p>具体可参考官方<a href="http://www.gohugo.org/" target="_blank">中文参考文档</a></p>
+
+<p>直接安装步骤如下：</p>
+
+<ul>
+<li>从<a href="https://github.com/spf13/hugo/releases" target="_blank">Hugo Releases</a>下载对应操作系统的<code>Hugo</code>二进制文件，放在<code>/bin/</code>目录下运行</li>
+<li>安装依赖工具： Git， Mercruial， Go(1.3+)</li>
+<li>安装 <a href="https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions" target="_blank">Visual Studio Code</a> ，方便修改代码</li>
+</ul>
+
+<p>注意 <code>Go</code> 的高版本编译需要 <code>Go 1.4</code> 作为初始编译器，因此要先安装后再安装高版本，可参考 <a href="https://blog.csdn.net/beyond__devil/article/details/68064202" target="_blank">Go高版本安装</a> 。</p>
+
+<h3 id="让-go-get-显示进度">让 go get 显示进度</h3>
+
+<p>在使用 Go 下载 github 的包比较大时，需要让屏幕显示进度，可以通过修改 Go 源码来实现。打开 <code>/usr/local/go/src/cmd/go/vcs.go</code> 文件，如下修改:</p>
+
+<pre><code class="language-go">// vcsGit describes how to use Git.
+var vcsGit = &amp;vcsCmd{
+	name: &quot;Git&quot;,
+	cmd:  &quot;git&quot;,
+
+	createCmd:   &quot;clone {repo} {dir}&quot;, // 此处修改为 clone --progress {repo} {dir} update --init --recursive&quot;},
+</code></pre>
+
+<pre><code class="language-go">var buf bytes.Buffer
+	cmd.Stdout = &amp;buf
+	cmd.Stderr = &amp;buf
+	cmd.Stdout = os.Stdout // 重定向标准输出
+	cmd.Stderr = os.Stderr // 重定向标准输出
+	err = cmd.Run()
+</code></pre>
+
+<p>然后运行 <code>src/all.bash</code> 重新编译 Go，等编译完成后使用 <code>go get</code> 可以看到进度条。</p>
+
+<h3 id="安装-pandoc">安装 pandoc</h3>
+
+<p>使用二进制包安装，具体流程如下：</p>
+
+<pre><code>$ wget -c https://github.com/jgm/pandoc/releases/download/2.1.3/pandoc-2.1.3-linux.tar.gz
+$ tar -zxvf pandoc-2.1.3-linux.tar.gz
+$ su
+# mv pandoc-2.1.3 /usr/local/
+$ vim ~/.bashrc
+At the end of the file, add “export PATH=/usr/local/pandoc-2.1.3/bin:${PATH}”
+$ source ~/.bashrc
+</code></pre>
+
+<hr />
+
+<h2 id="主题安装">主题安装</h2>
+
+<p>参考 <a href="https://github.com/seisman/hugo-theme-even" target="_blank">even</a></p>
+
+<ul>
+<li>修改 <code>/themes/even/src/css/</code> 目录下的版本文件，调整了网页的样式。</li>
+<li>修改 <code>/themes/even/src/fonts/</code> 目录下的字体文件及 <code>/themes/even/src/css/_custom/</code> 的 <code>_custom.scss</code> 文件个性化定制页面。</li>
+</ul>
+
+<p>注意修改 <code>/themes/even/src/</code> 内任一文件时，要再次编译，编译命令如下：</p>
+
+<pre><code>$ cd src/
+$ npm install
+$ npm run build
+</code></pre>
+
+<hr />
+
+<h2 id="字体修改">字体修改</h2>
+
+<h3 id="字体安装">字体安装</h3>
+
+<p>字体转换工具可使用 <a href="https://everythingfonts.com/" target="_blank">Everthing Fonts</a></p>
+
+<p><strong>Abode Source Code Pro</strong></p>
+
+<pre><code>$ sudo yum install adobe-source-code-pro-fonts
+$ cd /usr/share/fonts/adobe-source-code-pro
+</code></pre>
+
+<h3 id="字体修改-1">字体修改</h3>
+
+<p>字体修改可参考 <a href="https://www.w3cplus.com/content/css3-font-face" target="_blank">CSS3@font-face</a>，修改 <code>/themes/even/src/css/_custom/_custom.scss</code> 的字体变量列表，具体不再列出。</p>
+
+<p>执行 <code>npm install</code>， <code>npm run build</code> 会报错 <code>Unexpected character '' (1:0)</code>，可通过如下办法解决：</p>
+
+<pre><code>$ vim /themes/even_m/src/webpack.config.js
+// 添加如下语句
+{ 
+  test: /OpenSans-BoldItalic\.(woff|woff2|eot|ttf|otf|svg)$/,
+  use: 'file-loader?name=[path][name].[ext]'
+}
+</code></pre>
+
+<hr />
+
+<h2 id="网站图标修改">网站图标修改</h2>
+
+<p>修改网站的图表，可修改 <code>themes/even/static/</code> 文件夹下的几个图片。也可在根目录 <code>static/</code> 中放置此类文件进行覆盖，优先级高于主题模版文件。</p>
+
+<ul>
+<li>android-chrome-192x192.png</li>
+<li>android-chrome-512x512.png</li>
+<li>apple-touch-icon.png</li>
+<li>browserconfig.xml</li>
+<li>favicon-16x16.png</li>
+<li>favicon-32x32.png</li>
+<li>manifest.json</li>
+<li>mstile-150x150.png</li>
+<li>safari-pinned-tab.svg</li>
+</ul>
+
+<hr />
+
+<h2 id="hugo-站点说明">Hugo 站点说明</h2>
+
+<p><a href="https://blog.coderzh.com/2015/08/29/hugo/" target="_blank">参考博客</a></p>
+
+<ul>
+<li><code>archetypes</code> ：存放default.md，头文件格式</li>
+<li><code>content</code> ：content目录存放博客文章（.markdown/.md文件）</li>
+<li><code>data</code> ：存放自定义模版，导入的toml文件（或json，yaml）</li>
+<li><code>layouts</code> ：layouts目录存放的是网站的模板文件</li>
+<li><code>static</code> ：static目录存放js/css/img等静态资源</li>
+<li><code>config.toml</code> ：config.toml是网站的配置文件</li>
+</ul>
+
+<hr />
     </div>
 
     
