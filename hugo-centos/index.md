@@ -1,5 +1,5 @@
 ---
-`Hugo` 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。
+ `Hugo` 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。
 
 <!--more-->
 
@@ -27,6 +27,7 @@ var vcsGit = &vcsCmd{
 
 	createCmd:   "clone {repo} {dir}", // 此处修改为 clone --progress {repo} {dir} update --init --recursive"},
 ```
+
 ``` go
 var buf bytes.Buffer
 	cmd.Stdout = &buf
@@ -82,10 +83,10 @@ $ cd /usr/share/fonts/adobe-source-code-pro
 ### 3.2 字体修改
 字体修改可参考 [CSS3@font-face](https://www.w3cplus.com/content/css3-font-face)，修改 `/themes/even/src/css/_custom/_custom.scss` 的字体变量列表，具体不再列出。 
 
-执行 `npm install`， `npm run build` 会报错 `Unexpected character '' (1:0)`，可通过如下办法解决：
+执行 `npm install`， `npm run build` 会报错 `Unexpected character '' (1:0)`，可通过添加如下语句解决：
+
 ```
 $ vim /themes/even_m/src/webpack.config.js
-// 添加如下语句
 { 
   test: /OpenSans-BoldItalic\.(woff|woff2|eot|ttf|otf|svg)$/,
   use: 'file-loader?name=[path][name].[ext]'
@@ -101,6 +102,7 @@ $ vim /themes/even_m/src/webpack.config.js
 - android-chrome-512x512.png
 - apple-touch-icon.png
 - browserconfig.xml
+- favicon.ico
 - favicon-16x16.png
 - favicon-32x32.png
 - manifest.json
