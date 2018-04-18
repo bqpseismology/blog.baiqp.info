@@ -6,14 +6,12 @@
 申请域名后，可以通过将域名和`GitHub`的仓库绑定，则`GitHub Pages`的网页域名解析为自定义域名。具体做法如下，进入DNS管理，修改记录如下：
 
 | 类型           |      名称     |       值                  |   TTL      |
-| :------------ |:-------------:| -------------------------|-----------:|
+|:--------------|:-------------:| -------------------------|------------:|
 | A             |       @       |  192.30.252.153          | 1小时       |
 | CNAME         |       www     | bqpseismology.github.io  |  1小时      |
 | ...           |               |                          |             |
 
 **访问我的博客，[请戳这里](http://baiqp.info)** 
-
-
 
 ---
 
@@ -26,5 +24,5 @@
 
 ### 链接：
 
- - [GoDaddy](https://account.godaddy.com/products/#/)
- - [GitHub](https://github.com)
+- [GoDaddy](https://account.godaddy.com/products/#/)
+- [GitHub](https://github.com)
