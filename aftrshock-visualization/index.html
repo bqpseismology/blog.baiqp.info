@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>地震时间处理 - Qipeng Bai</title>
+  <title>新西兰地震余震可视化 - Qipeng Bai</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="Qipeng Bai" />
-  <meta name="description" content="通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。
+  <meta name="description" content="地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。
 
 " />
 
@@ -31,7 +31,7 @@
 <meta name="generator" content="Hugo 0.38.2" />
 
 
-<link rel="canonical" href="http://blog.baiqp.info/date-process/" />
+<link rel="canonical" href="http://blog.baiqp.info/aftrshock-visualization/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,24 +51,20 @@
 
 
 
-<meta property="og:title" content="地震时间处理" />
+<meta property="og:title" content="新西兰地震余震可视化" />
 <meta property="og:description" content="
 
-通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。
+地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.baiqp.info/date-process/" />
+<meta property="og:url" content="http://blog.baiqp.info/aftrshock-visualization/" />
 
 
 
-<meta property="article:published_time" content="2016-12-30T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-01-02T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2018-04-13T00:00:00&#43;00:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2018-04-15T00:00:00&#43;00:00"/>
 
 
 
@@ -76,26 +72,30 @@
 
 
 
-<meta itemprop="name" content="地震时间处理">
+
+
+
+
+<meta itemprop="name" content="新西兰地震余震可视化">
 <meta itemprop="description" content="
 
-通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。
+地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。
 
 ">
 
 
-<meta itemprop="datePublished" content="2016-12-30T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2016-12-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="828">
+<meta itemprop="datePublished" content="2017-01-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-01-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="554">
 
 
 
-<meta itemprop="keywords" content="数据处理,Shell," />
+<meta itemprop="keywords" content="地震,Python," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="地震时间处理"/>
+<meta name="twitter:title" content="新西兰地震余震可视化"/>
 <meta name="twitter:description" content="
 
-通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。
+地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。
 
 "/>
 
@@ -180,16 +180,16 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">地震时间处理</h1>
+      <h1 class="post-title">新西兰地震余震可视化</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2016-12-30 </span>
+        <span class="post-time"> 2017-01-02 </span>
         <div class="post-category">
             
               <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"> 计算机科学 </a>
             
           </div>
-        <span class="more-meta"> 约 828 字 </span>
+        <span class="more-meta"> 约 554 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -207,11 +207,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#c-中的时间计算-转换">C 中的时间计算、转换</a></li>
-<li><a href="#shell中的时间格式转换-时差计算">Shell中的时间格式转换、时差计算</a></li>
-<li><a href="#python中的date运算">Python中的date运算；</a></li>
-<li><a href="#perl中的date运算">Perl中的date运算；</a></li>
-<li><a href="#reference">Reference:</a></li>
+<li><a href="#aftershock">Aftershock</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -223,110 +219,107 @@
     <div class="post-content">
       <hr />
 
-<p>通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。</p>
+<p>地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。</p>
 
 <p></p>
 
-<h3 id="c-中的时间计算-转换">C 中的时间计算、转换</h3>
+<p>Python 具有十分丰富的扩展库来进行可视化工作，例如Matplotlib, Mayavi, VTK等等，这里我们主要关注的是地震学的数据可视化。</p>
 
-<p>地震的时间处理，主要是对不同格式的转换，这里我先给出一个转换的C程序。</p>
+<h3 id="aftershock">Aftershock</h3>
 
-<pre><code class="language-C">#include &quot;stdio.h&quot;
-main()
-{
-int day,month,year,sum,leap;
-scanf(&quot;%d-%d-%d&quot;,&amp;year,&amp;month,&amp;day);
-switch(month) /*先计算某月以前月份的总天数*/
-{
-  case 1:sum=0;break;
-  case 2:sum=31;break;
-  case 3:sum=59;break;
-  case 4:sum=90;break;
-  case 5:sum=120;break;
-  case 6:sum=151;break;
-  case 7:sum=181;break;
-  case 8:sum=212;break;
-  case 9:sum=243;break;
-  case 10:sum=273;break;
-printf(&quot;%d&quot;,sum);
-}  
-printf(&quot;%d&quot;,sum);
-}
+<blockquote>
+<p>The smaller aftershocks following a mainshock have a characteristic distribution in size and time. As Fig. 4.5-9, most aftershock occur on or near the mainshock&rsquo;s fault plane, so their location are used to distinguish between the fault and auxiliary planes and to estimate the fault area.</p>
+
+<p><cite>&ndash; Seth Stein, An Introduction to Seismology Earthquake and Earth Structure </cite></p>
+</blockquote>
+
+<p>作为例子，我们先选取 <strong>2016-11-20-M7.8新西兰地震</strong> 作为主震，从<code>USGS earthquake feed</code>下载csv格式的余震目录数据，
+这里使用了Python3的 <code>urllib</code> 包作为获取目录的模块，原始的csv文件是后发生地震在前，为了画出随主震后时间演化的地震，我们将数据从后往前取值。</p>
+
+<pre><code class="language-python">import urllib
+import numpy as np
+import matplotlib
+matplotlib.rcParams['toolbar'] = 'None'
+import matplotlib.pyplot as plt
+from mpl_toolkits.basemap import Basemap
+#from  matplotlib.animation import FuncAnimation
+import matplotlib.animation as animation
+
+
+# Open the earthquake data
+# -------------------------
+# -&gt; http://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php
+feed = &quot;http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/&quot;
+
+# Significant earthquakes in the past 30 days
+# url = urllib.request.urlopen(feed + &quot;significant_month.csv&quot;)
+
+# Earthquakes of magnitude &gt; 4.5 in the past 30 days
+# url = urllib.request.urlopen(feed + &quot;4.5_month.csv&quot;)
+url = urllib.request.urlopen(feed + &quot;4.5_week.csv&quot;)
+
+# Earthquakes of magnitude &gt; 2.5 in the past 30 days
+# url = urllib.request.urlopen(feed + &quot;2.5_month.csv&quot;)
+# url = urllib.request.urlopen(feed + &quot;2.5_week.csv&quot;)
+
+# Earthquakes of magnitude &gt; 1.0 in the past 30 days
+# url = urllib.request.urlopen(feed + &quot;1.0_month.csv&quot;)
+
+# Set earthquake data
+data = url.read()
+data = data.split(b'\n')[+1:-1]
+E = np.zeros(len(data), dtype=[('position',  float, 2),
+                               ('magnitude', float, 1)])
+for i in range(len(data)):
+    row = data[i].split(b',')
+    E['position'][i] = float(row[2]),float(row[1])
+    E['magnitude'][i] = float(row[4])
+
+
+fig = plt.figure()
+ax = plt.subplot(1,1,1)
+P = np.zeros(50, dtype=[('position', float, 2),
+                        ('size',     float, 1),
+                        ('growth',   float, 1),
+                        ('color',    float, 4)])
+
+# Basemap projection
+map = Basemap(projection='mill')
+map.drawcoastlines(color='0.40', linewidth=0.25)
+map.fillcontinents(color='0.60')
+scat = ax.scatter(P['position'][:,0], P['position'][:,1], P['size'], lw=0.5,
+                  edgecolors = P['color'], facecolors='None', zorder=10)
+
+
+def update(frame):
+    current = frame % len(E)
+    i = frame % len(P)
+
+    P['color'][:,3] = np.maximum(0, P['color'][:,3] - 1.0/len(P))
+    P['size'] += P['growth']
+
+    magnitude = E['magnitude'][current]
+    P['position'][i] = map(*E['position'][current])
+    P['size'][i] = 5
+    P['growth'][i]= np.exp(magnitude) * 0.1
+
+    if magnitude &lt; 6:
+        P['color'][i]    = 0,0,1,1
+    else:
+        P['color'][i]    = 1,0,0,1
+    scat.set_edgecolors(P['color'])
+    scat.set_facecolors(P['color']*(1,1,1,0.25))
+    scat.set_sizes(P['size'])
+    scat.set_offsets(P['position'])
+
+plt.title(&quot;Earthquakes &gt; 4.5 in the last 30 days&quot;)
+anim = animation.FuncAnimation(fig, update, interval=100)
+anim.save('line.gif', dpi=100, writer='imagemagick')
 </code></pre>
 
-<p>一般来说，时间处理主要是进行以下几件工作：</p>
+<p>演示效果：</p>
 
-<ul>
-<li>时间格式转换</li>
-<li>时间差计算</li>
-<li>时间统计-程序运行</li>
-</ul>
-
-<p>地震学中的问题主要是时间的格式转换和时差计算，</p>
-
-<h3 id="shell中的时间格式转换-时差计算">Shell中的时间格式转换、时差计算</h3>
-
-<p>date通常情况下可以分： <code>年月日 时分秒</code> 一般情况下需要对date做四则运算。shell中命令的空格要严格控制，等号两边无空格，有多余空格会出现错误，这中限制在日期date命令中就比较明显。</p>
-
-<p>命令格式：</p>
-
-<pre><code class="language-bash">date [-u] [-d datestr] [-s datestr] [--utc] [--universal] [--date=datestr] [--set=datestr] [--help] [-version] [+FORMAT] [MMDDhhmm[[CC]YY][.ss]]
-</code></pre>
-
-<p>通常我们拿到的时间格式会有以下几种：</p>
-
-<ul>
-<li>CSV: <code>%Y-%m-%dT%H:%M:%SZ</code> 例如：<code>2016-10-21T05:07:23.000Z</code></li>
-<li>SAC: <code>%Y %j %H %M %S</code> 例如： <code>2016 295 05 07 23.00</code>，或者是 <code>saclst kzdate kztime f sacfile</code> 得到 <code>%Y/%m/%d %H:%M:%S</code> 的时间格式</li>
-<li>其他: 例如 <code>2016年 10月 21日 星期五 05：07：23 CST</code>等</li>
-</ul>
-
-<p>date显示指定格式的时间 <code>date -d &quot;STRING&quot; +&quot;FORMAT&quot;</code>，尽量加上双引号，避免空格。由此我们可以这样计算，取出时间处理成<code>%Y-%m-%d %H:%M:%S</code>格式，然后转换成自 <code>UTC</code> 时间<code>1970-01-01 00:00:00</code> 以来所有时间的秒数，然后通过秒数进行四则运算，最后再转换为想要的格式。这里暂且定义 <code>%Y-%m-%d %H:%M:%S</code> 为标准格式，其他时间都以此为对比标准。</p>
-
-<pre><code class="language-bash">#! /bin/bash
-catalog=query.csv
-outfile=LocalTime
-localtimezone=$1
-
-gawk -F &quot;,&quot; 'NR&gt;=2 {print $1}' $catalog | sed 's/Z/ /g' | sed 's/T/ /g' &gt; StandardTime
-echo -e &quot;\033[35m\tStandard time: \033[0m&quot;
-cat StandardTime
-cat StandardTime | while read line
-do
-        UTCtimestamp=`date -d &quot;$line&quot; +%s`
-        localtimestamp=`expr $UTCtimestamp + $localtimezone \* 60 \* 60 | bc` # oneday=86400(s)
-        echo `date -d @$localtimestamp +&quot;%Y %j %H %M %S&quot;` &gt;&gt; LocalTime
-done
-echo -e &quot;\033[35m\tLocal time: \033[0m&quot;
-cat LocalTime
-rm -rf StandardTime
-</code></pre>
-
-<pre><code class="language-bash">#! /bin/bash
-if [ $# -ne 2 ];
-then
-        echo 'Usage: SAC2standTime.sh filepath timezone(hour)'
-else
-sacpath=$1
-localtimezone=$2 # 指定时区校正值,
-sac=&quot;*.U&quot;
-cd $sacpath/
-line=`saclst kzdate kztime f $sac | head -1 | gawk '{split($2,aa,&quot;/&quot;);print aa[1]&quot;-&quot;aa[2]&quot;-&quot;aa[3],$3}'`
-localtimestamp=`date -d &quot;$line&quot; +%s`
-UTCtimestamp=`expr $localtimestamp - $localtimezone \* 60 \* 60 | bc` # oneday=86400(s) onehour=3600(s)
-echo `date -d @$UTCtimestamp +&quot;%Y %j %H %M %S&quot;`
-fi
-</code></pre>
-
-<p>通过上述两个shell脚本将标准时间和SAC中的时间进行互相转换，有效！</p>
-
-<h3 id="python中的date运算">Python中的date运算；</h3>
-
-<h3 id="perl中的date运算">Perl中的date运算；</h3>
-
-<hr />
-
-<h3 id="reference">Reference:</h3>
+<p><img src="/images/2017-01-02-aftershock-visualization/10km_NewZealand.gif" alt="10km New Zealand aftershock " width="100%" ></img></p>
     </div>
 
     
@@ -337,11 +330,11 @@ fi
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2018-04-13</span>
+    <span class="item-content">2018-04-15</span>
   </p>
   <p class="copyright-item">
       <span class="item-title">原始文档</span>
-      <span class="item-content"><a class="link-to-markdown" href="http://blog.baiqp.info/date-process/index.md" target="_blank">Markdown »</a></span>
+      <span class="item-content"><a class="link-to-markdown" href="http://blog.baiqp.info/aftrshock-visualization/index.md" target="_blank">Markdown »</a></span>
     </p>
   <p class="copyright-item">
     <span class="item-title">许可协议</span>
@@ -372,23 +365,18 @@ fi
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">数据处理</a>
+          <a href="/tags/%E5%9C%B0%E9%9C%87/">地震</a>
           
-          <a href="/tags/Shell/">Shell</a>
+          <a href="/tags/Python/">Python</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/aftrshock-visualization/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">新西兰地震余震可视化</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/southkorea-earthquake/">
-            <span class="next-text nav-default">韩国地震CAP机制解</span>
+          <a class="next" href="/date-process/">
+            <span class="next-text nav-default">地震时间处理</span>
             <span class="prev-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
