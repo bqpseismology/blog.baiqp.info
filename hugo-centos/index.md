@@ -15,7 +15,7 @@
 
 注意 `Go` 的高版本编译需要 `Go 1.4` 作为初始编译器，因此要先安装后再安装高版本，可参考 [Go高版本安装](https://blog.csdn.net/beyond__devil/article/details/68064202) 。
 
-### 让 go get 显示进度
+### 让go get显示进度
 
 在使用 Go 下载 github 的包比较大时，需要让屏幕显示进度，可以通过修改 Go 源码来实现。打开 `/usr/local/go/src/cmd/go/vcs.go` 文件，如下修改:
 
@@ -37,7 +37,7 @@ var buf bytes.Buffer
 ```
 然后运行 `src/all.bash` 重新编译 Go，等编译完成后使用 `go get` 可以看到进度条。
 
-### 安装 pandoc
+### 安装pandoc
 
 使用二进制包安装，具体流程如下：
 ```
@@ -101,6 +101,7 @@ $ vim /themes/even_m/src/webpack.config.js
 - android-chrome-512x512.png
 - apple-touch-icon.png
 - browserconfig.xml
+- favicon.ico
 - favicon-16x16.png
 - favicon-32x32.png
 - manifest.json
@@ -109,7 +110,7 @@ $ vim /themes/even_m/src/webpack.config.js
 
 ---
 
-## Hugo 站点说明
+## Hugo站点说明
 [参考博客](https://blog.coderzh.com/2015/08/29/hugo/)
 
 - `archetypes` ：存放default.md，头文件格式
