@@ -1,0 +1,66 @@
+// ==============================
+// Custom style
+// ==============================
+// You can override the variables in _variables.scss to customize the style
+
+// ========== Global ========== //
+// Text color of the body.
+$global-font-color: #000000 ;
+// Font size attribute applied to '<html>' and '<body>'.
+$global-font-size: 18px ;
+
+// Global width of '<body>'.s
+$global-body-width: 1210px ;
+
+// Background color of the site.
+$global-background: #F8F8F5 ;
+
+// ========== Header ========== //
+// Font family: OpenSans
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans/OpenSans-BoldItalic.eot');
+    src: local('OpenSans'), url('../fonts/opensans/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans/OpenSans-BoldItalic.woff2') format('woff2'),
+    url('../fonts/opensans/OpenSans-BoldItalic.woff') format('woff'),
+    url('../fonts/opensans/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Asia Pacific';
+    src: url('../fonts/asiapacific/asia_pacific-webfont.eot');
+    src: url('../fonts/asiapacific/asia_pacific-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/asiapacific/asia_pacific-webfont.woff2') format('woff2'),
+         url('../fonts/asiapacific/asia_pacific-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Chinese -- serif有衬线字体: Chancery, cursive, LiSu, Athelas, HYHanShi
+// English -- sans-serif无衬线字体: 'Microsoft Yahei', 'Source Sans Pro', 'Helvetica Neue', Arial, STHeiti, opensans,
+
+// Font family of the logo.
+//$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+$logo-font-family: 'Asia Pacific', OpenSans, 'Chancery', cursive, LiSu, sans-serif ;
+
+// Font family of the site. 
+//$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family: 'Times New Roman', YouYuan, 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+
+// global serif font family of the site.
+//$global-serif-font-family: Athelas, STHeiti, 'Microsoft Yahei', serif !default;
+$global-serif-font-family: 'Times New Roman', STXingkai, STHeiti, serif;
+
+// Font size of menu item link.
+$menu-link-font-size: 24px ;
+
+// ========== Code ========== //
+// Color of the code.
+//$code-color: #FFA500 ;
+$code-color: #FF8C00 ;
+
+// Font size of code.
+$code-font-size: 15px ;

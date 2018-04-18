@@ -1,0 +1,21 @@
+language: python
+python: 3.4.2
+
+before_install:
+  - cd ..
+  - git clone --depth=50 --branch=master https://github.com/bqpseismology/bqpseismology.github.io.git
+  - cd bqpseismology.github.io
+  - git submodule update --init --recursive --remote
+
+install:
+#  - curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash
+  - pip install pygments
+
+script:
+  - ./hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: ${GH_TOKEN}
+  local_dir: ../bqpseismology.github.io/public
