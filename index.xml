@@ -24,10 +24,10 @@
     <item>
       <title>链接</title>
       <link>http://blog.baiqp.info/links/</link>
-      <pubDate>Tue, 30 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/links/</guid>
-      <description>常用链接汇总，鼠标在链接上悬停可看到详细名称 1. 博客框架 表情 2. 地震学 2.1 数据机构 IRIS 2.2 期刊 Journal Citation Reports</description>
+      <description>常用链接汇总，鼠标在链接上悬停可看到详细名称 1. 博客框架 Hugo GitHub GoDaddy MarkDown MarkDown 表情 MkDocs GitBook Read the Docs []() 2. 地震学 2.1 数据机构 IRIS 2.2 期刊 Journal Citation Reports</description>
     </item>
     
     <item>
@@ -49,14 +49,14 @@
     </item>
     
     <item>
-      <title>二级域名绑定 GitHub Pages</title>
-      <link>http://blog.baiqp.info/subdomain-githubpages/</link>
-      <pubDate>Wed, 18 Apr 2018 22:36:23 +0800</pubDate>
+      <title>使用 MkDocs 撰写文档手册</title>
+      <link>http://blog.baiqp.info/mkdocs-manual/</link>
+      <pubDate>Thu, 19 Apr 2018 15:13:45 +0800</pubDate>
       
-      <guid>http://blog.baiqp.info/subdomain-githubpages/</guid>
-      <description>&lt;hr /&gt;
+      <guid>http://blog.baiqp.info/mkdocs-manual/</guid>
+      <description>&lt;p&gt;&lt;code&gt;MkDocs&lt;/code&gt; 可同时编译多个 MarkDown 文件，形成书籍一样的文件。也可以选择不同主题，时刻项目使用。当然也有其他框架选择&lt;sup&gt;&lt;a href=&#34;#ref01&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;申请到顶级域名后，可以将二级域名和 GitHub Pages 的项目仓库进行绑定，做到分仓库管理网站。这样可以在不修改主站的情况下对不同工作进行分类汇总。&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -116,12 +116,12 @@
     </item>
     
     <item>
-      <title>Qipeng Bai博客</title>
+      <title>Qipeng Bai&#39;s Blog</title>
       <link>http://blog.baiqp.info/README/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/README/</guid>
-      <description> blog.baiqp.info </description>
+      <description>地震学、计算机科学 2016 年 你好！ 韩国地震CAP机制解 地震时间处理 2017 年 新西兰地震余震可视化 2018 年 顶级域名绑定 GitHub Pages Hugo安装配置 二级域名绑定 GitHub Pages</description>
     </item>
     
   </channel>

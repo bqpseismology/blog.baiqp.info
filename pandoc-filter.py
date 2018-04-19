@@ -16,7 +16,7 @@ import sys
 import glob
 from pandocfilters import toJSONFilter, Str
 
-siteurl = "https://bqpseismology.github.io"
+siteurl = "http://blog.baiqp.info"
 
 def filters(key, value, format, meta):
     # [caption](/images/xxx.png) => [caption](images/xxx.png)
