@@ -27,7 +27,7 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/links/</guid>
-      <description>常用链接汇总，鼠标在链接上悬停可看到详细名称 1. 博客框架 Hugo GitHub GoDaddy MarkDown MarkDown 表情 MkDocs GitBook Read the Docs []() 2. 地震学 2.1 数据机构 IRIS 2.2 期刊 Journal Citation Reports</description>
+      <description>常用链接汇总，鼠标在链接上悬停可看到详细名称 1. 博客框架 Hugo GitHub Git GoDaddy MarkDown MarkDown 表情 MkDocs GitBook Read the Docs []() 廖雪峰的官方网站 2. 地震学 2.1 数据机构 IRIS 2.2 期刊 Journal Citation Reports</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       <pubDate>Sat, 22 Jun 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/about/</guid>
-      <description>联系方式 ✉️ 电子邮箱: bqpseismology@gmail.com</description>
+      <description>测试版本，仅供参考，请注意！ 联系方式 ✉️ 电子邮箱: bqpseismology@gmail.com</description>
     </item>
     
     <item>
@@ -108,9 +108,9 @@
       <guid>http://blog.baiqp.info/hello-world/</guid>
       <description>&lt;hr /&gt;
 
-&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。&lt;/p&gt;
+&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦：smile：&lt;/p&gt;
 
-&lt;p&gt;本博客收集资料与2016年，整理发布于 2018 年，主要关注地震学、计算机科学、深度学习、音乐与心理学的知识整理与分享。&lt;/p&gt;
+&lt;p&gt;本博客始于 2016 年， 2018 年测试发布，主要关注地震学、计算机科学、深度学习、音乐与心理学的知识整理与分享。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
