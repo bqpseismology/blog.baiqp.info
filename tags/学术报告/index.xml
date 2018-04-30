@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>地震学 on Qipeng Bai</title>
-    <link>http://blog.baiqp.info/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6/</link>
-    <description>Recent content in 地震学 on Qipeng Bai</description>
+    <title>学术报告 on Qipeng Bai</title>
+    <link>http://blog.baiqp.info/tags/%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A/</link>
+    <description>Recent content in 学术报告 on Qipeng Bai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
     <lastBuildDate>Mon, 30 Apr 2018 15:45:21 +0800</lastBuildDate>
     
-	<atom:link href="http://blog.baiqp.info/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.baiqp.info/tags/%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,19 +23,6 @@
 &lt;p&gt;2018年4月25日
 主讲题目：大洋钻探——地球科学创新的前沿
 主讲人：朱日祥 中国科学院院士、第三世界科学院院士、美国地球物理联合会会士&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>韩国地震CAP机制解</title>
-      <link>http://blog.baiqp.info/southkorea-earthquake/</link>
-      <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.baiqp.info/southkorea-earthquake/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;2016-09-12在韩国庆州境内发生两次地震，本文给出 &lt;strong&gt;CAP&lt;/strong&gt; 近震的机制解反演结果。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

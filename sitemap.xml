@@ -31,6 +31,13 @@
   </url>
   
   <url>
+    <loc>http://blog.baiqp.info/academic-report-ZhuRiXiang/</loc>
+    <lastmod>2018-04-30T16:00:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.baiqp.info/mkdocs-manual/</loc>
     <lastmod>2018-04-19T15:13:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -87,7 +94,7 @@
   
   <url>
     <loc>http://blog.baiqp.info/post/</loc>
-    <lastmod>2018-04-19T15:13:45+08:00</lastmod>
+    <lastmod>2018-04-30T16:00:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -149,7 +156,14 @@
   
   <url>
     <loc>http://blog.baiqp.info/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-30T16:00:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A/</loc>
+    <lastmod>2018-04-30T16:00:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
