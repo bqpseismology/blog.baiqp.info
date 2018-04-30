@@ -31,6 +31,13 @@
   </url>
   
   <url>
+    <loc>http://blog.baiqp.info/book-working-memory/</loc>
+    <lastmod>2018-04-30T16:53:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.baiqp.info/academic-report-ZhuRiXiang/</loc>
     <lastmod>2018-04-30T16:00:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -93,8 +100,15 @@
   </url>
   
   <url>
+    <loc>http://blog.baiqp.info/categories/others/</loc>
+    <lastmod>2018-04-30T16:53:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.baiqp.info/post/</loc>
-    <lastmod>2018-04-30T16:00:18+08:00</lastmod>
+    <lastmod>2018-04-30T16:53:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -178,6 +192,13 @@
   <url>
     <loc>http://blog.baiqp.info/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
     <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-04-30T16:53:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

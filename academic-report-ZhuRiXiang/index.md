@@ -226,3 +226,5 @@ a consequaence, not a cause. It is essentially the same problem with different b
 
 地球是一个古老的星球，经历46亿年沧桑巨变，今天仍处于活力四溅的壮年期。地球科学是一门古老的学科，更是自然科学的拓荒者，今天
 依然生机勃勃，充满挑战与机遇。
+
+-----
