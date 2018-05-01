@@ -31,6 +31,13 @@
   </url>
   
   <url>
+    <loc>http://blog.baiqp.info/critical-thinking-template/</loc>
+    <lastmod>2018-05-01T11:10:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.baiqp.info/book-working-memory/</loc>
     <lastmod>2018-04-30T16:53:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -101,14 +108,14 @@
   
   <url>
     <loc>http://blog.baiqp.info/categories/others/</loc>
-    <lastmod>2018-04-30T16:53:41+08:00</lastmod>
+    <lastmod>2018-05-01T11:10:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.baiqp.info/post/</loc>
-    <lastmod>2018-04-30T16:53:41+08:00</lastmod>
+    <lastmod>2018-05-01T11:10:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -178,6 +185,13 @@
   <url>
     <loc>http://blog.baiqp.info/tags/%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A/</loc>
     <lastmod>2018-04-30T16:00:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.baiqp.info/tags/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4/</loc>
+    <lastmod>2018-05-01T11:10:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
