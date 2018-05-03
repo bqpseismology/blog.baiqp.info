@@ -1,11 +1,10 @@
----
 地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。
 
 <!--more-->
 
 Python 具有十分丰富的扩展库来进行可视化工作，例如Matplotlib, Mayavi, VTK等等，这里我们主要关注的是地震学的数据可视化。
 
-### Aftershock
+## Aftershock
 
 > The smaller aftershocks following a mainshock have a characteristic distribution in size and time. As Fig. 4.5-9, most aftershock occur on or near the mainshock's fault plane, so their location are used to distinguish between the fault and auxiliary planes and to estimate the fault area.
 >
@@ -96,6 +95,6 @@ plt.title("Earthquakes > 4.5 in the last 30 days")
 anim = animation.FuncAnimation(fig, update, interval=100)
 anim.save('line.gif', dpi=100, writer='imagemagick')
 ```
-演示效果：
+演示效果（pdf版无法查看gif图片）：
 
 <img src="/images/2017-01-02-aftershock-visualization/10km_NewZealand.gif" alt="10km New Zealand aftershock " width="100%" ></img>

@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Thu, 19 Apr 2018 15:13:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 03 May 2018 00:04:10 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MarkDown 基本语法</title>
+      <link>http://blog.baiqp.info/markdown-basic-grammar/</link>
+      <pubDate>Thu, 03 May 2018 00:04:10 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/markdown-basic-grammar/</guid>
+      <description>&lt;p&gt;Markdown 是一种轻型标记语言，&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018 04 20 Overleaf Latex Manual</title>
+      <link>http://blog.baiqp.info/2018-04-20-Overleaf-Latex-Manual/</link>
+      <pubDate>Fri, 20 Apr 2018 22:08:09 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/2018-04-20-Overleaf-Latex-Manual/</guid>
+      <description>Overleaf 是一个网页版 LaTex 编辑工具，里面有大量的模版可以使用，极大的方便了科研工作。 这里通过学习使用相关的内容，有助于我们的科研工作。 Overleaf 使用介绍 在官网</description>
+    </item>
     
     <item>
       <title>使用 MkDocs 撰写文档手册</title>
@@ -20,7 +40,38 @@
       <guid>http://blog.baiqp.info/mkdocs-manual/</guid>
       <description>&lt;p&gt;&lt;code&gt;MkDocs&lt;/code&gt; 可同时编译多个 MarkDown 文件，形成书籍一样的文件。也可以选择不同主题，时刻项目使用。当然也有其他框架选择&lt;sup&gt;&lt;a href=&#34;#ref01&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>二级域名绑定 GitHub Pages</title>
+      <link>http://blog.baiqp.info/subdomain-githubpages/</link>
+      <pubDate>Wed, 18 Apr 2018 22:36:23 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/subdomain-githubpages/</guid>
+      <description>&lt;p&gt;申请到顶级域名后，可以将二级域名和 GitHub Pages 的项目仓库进行绑定，做到分仓库管理网站。这样可以在不修改主站的情况下对不同工作进行分类汇总。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo安装配置</title>
+      <link>http://blog.baiqp.info/hugo-centos/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/hugo-centos/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Hugo&lt;/code&gt; 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>顶级域名绑定 GitHub Pages</title>
+      <link>http://blog.baiqp.info/godaddy-githubpages/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/godaddy-githubpages/</guid>
+      <description>&lt;p&gt;使用 &lt;code&gt;Hugo&lt;/code&gt; 编译后的静态博客，在 &lt;code&gt;GitHub Pages&lt;/code&gt; 上发布，可以直接在 &lt;code&gt;https://username.github.io&lt;/code&gt; 查看。当然一些人想使用自定义域名，可以通过 &lt;a href=&#34;https://sg.godaddy.com/zh&#34; target=&#34;_blank&#34;&gt;Godaddy&lt;/a&gt; 申请一个域名。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -31,9 +82,7 @@
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/hello-world/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦 😄&lt;/p&gt;
+      <description>&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦 😄&lt;/p&gt;
 
 &lt;p&gt;本博客始于 2016 年， 2018 年测试发布，主要关注地震学、计算机科学、深度学习、音乐与心理学的知识整理与分享。&lt;/p&gt;
 

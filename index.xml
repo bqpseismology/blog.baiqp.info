@@ -7,37 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Fri, 21 Jun 2013 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Jun 2013 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>合集</title>
-      <link>http://blog.baiqp.info/collections/</link>
-      <pubDate>Fri, 21 Jun 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.baiqp.info/collections/</guid>
-      <description>本页面收集了最常更新的文章。 地震案例 读书笔记 学术报告</description>
-    </item>
-    
-    <item>
-      <title>链接</title>
-      <link>http://blog.baiqp.info/links/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.baiqp.info/links/</guid>
-      <description>常用链接汇总，鼠标在链接上悬停可看到详细名称 1. 博客框架 Hugo GitHub Git GoDaddy MarkDown MarkDown 表情 MkDocs GitBook Read the Docs []() 廖雪峰的官方网站 2. 地震学 2.1 数据机构 IRIS 2.2 期刊 Journal Citation Reports</description>
-    </item>
-    
-    <item>
-      <title>打赏</title>
-      <link>http://blog.baiqp.info/donations/</link>
-      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.baiqp.info/donations/</guid>
-      <description>欢迎打赏，推荐使用微信支付～ 微信支付 支付宝</description>
-    </item>
     
     <item>
       <title>关于</title>
@@ -49,14 +22,83 @@
     </item>
     
     <item>
+      <title>如何对地震学问题进行误差分析？</title>
+      <link>http://blog.baiqp.info/seismology-error-analysis/</link>
+      <pubDate>Thu, 03 May 2018 01:05:21 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/seismology-error-analysis/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>虚拟机环境安装 CentOS</title>
+      <link>http://blog.baiqp.info/centos-vmware/</link>
+      <pubDate>Thu, 03 May 2018 01:04:12 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/centos-vmware/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MarkDown 基本语法</title>
+      <link>http://blog.baiqp.info/markdown-basic-grammar/</link>
+      <pubDate>Thu, 03 May 2018 00:04:10 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/markdown-basic-grammar/</guid>
+      <description>&lt;p&gt;Markdown 是一种轻型标记语言，&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAPtel 地震实例说明</title>
+      <link>http://blog.baiqp.info/cap-captel-manual/</link>
+      <pubDate>Wed, 02 May 2018 16:32:56 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/cap-captel-manual/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>地震学--三级学科汇总</title>
+      <link>http://blog.baiqp.info/%E5%9C%B0%E9%9C%87%E5%AD%A6--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Wed, 02 May 2018 01:11:59 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E5%9C%B0%E9%9C%87%E5%AD%A6--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;地震学是研究&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAP方法汇总</title>
+      <link>http://blog.baiqp.info/CAP%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Wed, 02 May 2018 01:11:52 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/CAP%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>人工智能--三级学科汇总</title>
+      <link>http://blog.baiqp.info/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Wed, 02 May 2018 01:11:42 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>读书笔记汇总</title>
       <link>http://blog.baiqp.info/collections-books/</link>
       <pubDate>Tue, 01 May 2018 12:01:01 +0800</pubDate>
       
       <guid>http://blog.baiqp.info/collections-books/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;读书笔记链接汇总&lt;/p&gt;
+      <description>&lt;p&gt;读书笔记链接汇总&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -67,11 +109,18 @@
       <pubDate>Tue, 01 May 2018 11:10:13 +0800</pubDate>
       
       <guid>http://blog.baiqp.info/critical-thinking-template/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;《批判性思维》理查德﹒保罗 ——第八章 规划你的学习&lt;/p&gt;
+      <description>&lt;p&gt;《批判性思维》理查德﹒保罗 ——第八章 规划你的学习&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>合集</title>
+      <link>http://blog.baiqp.info/collections/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/collections/</guid>
+      <description>学科分类汇总 学历文凭不单纯，知识要多学活用！ 常用链接汇总，鼠标在链接上悬停可看到详细名称。每个整理好的三级学科可链接到子链接阅读详细内容。 学</description>
     </item>
     
     <item>
@@ -80,9 +129,7 @@
       <pubDate>Mon, 30 Apr 2018 16:34:36 +0800</pubDate>
       
       <guid>http://blog.baiqp.info/book-working-memory/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;《超负荷的大脑·信息过载与工作记忆的极限》是瑞典医学、哲学博士托克尔·克林贝里的一本关于大脑进化的讨论、神经科学的历史、
+      <description>&lt;p&gt;《超负荷的大脑·信息过载与工作记忆的极限》是瑞典医学、哲学博士托克尔·克林贝里的一本关于大脑进化的讨论、神经科学的历史、
 最前沿的科研方法学、信息理论，以及对神经可塑性的最新见解和关于多种神经发育疾病的全面综述。试图回答：我们大脑处理信息的
 能力为什么是有限的？这对我们的日常生活有什么影响？我们如何通过脑力锻炼拓展这些极限？&lt;/p&gt;
 
@@ -95,13 +142,29 @@
       <pubDate>Mon, 30 Apr 2018 15:45:21 +0800</pubDate>
       
       <guid>http://blog.baiqp.info/academic-report-ZhuRiXiang/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;2018年4月25日
+      <description>&lt;p&gt;2018年4月25日
 主讲题目：大洋钻探——地球科学创新的前沿
 主讲人：朱日祥 中国科学院院士、第三世界科学院院士、美国地球物理联合会会士&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2018 04 20 Overleaf Latex Manual</title>
+      <link>http://blog.baiqp.info/2018-04-20-Overleaf-Latex-Manual/</link>
+      <pubDate>Fri, 20 Apr 2018 22:08:09 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/2018-04-20-Overleaf-Latex-Manual/</guid>
+      <description>Overleaf 是一个网页版 LaTex 编辑工具，里面有大量的模版可以使用，极大的方便了科研工作。 这里通过学习使用相关的内容，有助于我们的科研工作。 Overleaf 使用介绍 在官网</description>
+    </item>
+    
+    <item>
+      <title>CAP gCAPjoint Manual</title>
+      <link>http://blog.baiqp.info/CAP-gCAPjoint-Manual/</link>
+      <pubDate>Fri, 20 Apr 2018 22:08:09 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/CAP-gCAPjoint-Manual/</guid>
+      <description>如果每个文档字数超过3000字，则单独出来作为独立内容。优化文章结构。 CAP方法原理 CAP方法软件安装汇总 依赖软件 CAP衍生及改进方法介绍 g</description>
     </item>
     
     <item>
@@ -112,9 +175,58 @@
       <guid>http://blog.baiqp.info/mkdocs-manual/</guid>
       <description>&lt;p&gt;&lt;code&gt;MkDocs&lt;/code&gt; 可同时编译多个 MarkDown 文件，形成书籍一样的文件。也可以选择不同主题，时刻项目使用。当然也有其他框架选择&lt;sup&gt;&lt;a href=&#34;#ref01&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>二级域名绑定 GitHub Pages</title>
+      <link>http://blog.baiqp.info/subdomain-githubpages/</link>
+      <pubDate>Wed, 18 Apr 2018 22:36:23 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/subdomain-githubpages/</guid>
+      <description>&lt;p&gt;申请到顶级域名后，可以将二级域名和 GitHub Pages 的项目仓库进行绑定，做到分仓库管理网站。这样可以在不修改主站的情况下对不同工作进行分类汇总。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo安装配置</title>
+      <link>http://blog.baiqp.info/hugo-centos/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/hugo-centos/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Hugo&lt;/code&gt; 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>顶级域名绑定 GitHub Pages</title>
+      <link>http://blog.baiqp.info/godaddy-githubpages/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/godaddy-githubpages/</guid>
+      <description>&lt;p&gt;使用 &lt;code&gt;Hugo&lt;/code&gt; 编译后的静态博客，在 &lt;code&gt;GitHub Pages&lt;/code&gt; 上发布，可以直接在 &lt;code&gt;https://username.github.io&lt;/code&gt; 查看。当然一些人想使用自定义域名，可以通过 &lt;a href=&#34;https://sg.godaddy.com/zh&#34; target=&#34;_blank&#34;&gt;Godaddy&lt;/a&gt; 申请一个域名。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>打赏</title>
+      <link>http://blog.baiqp.info/donations/</link>
+      <pubDate>Fri, 13 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/donations/</guid>
+      <description>欢迎打赏，推荐使用微信支付～ 微信支付 支付宝</description>
+    </item>
+    
+    <item>
+      <title>链接</title>
+      <link>http://blog.baiqp.info/links/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/links/</guid>
+      <description>常用链接汇总，鼠标在链接上悬停可看到详细名称 1. 地震学相关问题汇总 地震案例 读书笔记 地震学家文章笔记 学术报告 地震学问题解答 CAP总结 2. 博客框架 Hugo</description>
     </item>
     
     <item>
@@ -123,9 +235,7 @@
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/aftrshock-visualization/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。&lt;/p&gt;
+      <description>&lt;p&gt;地震学中的可视化工作多种多样，这里我们首先对新西兰地震余震震中随时间演化的可视化给出一个示例。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -136,9 +246,7 @@
       <pubDate>Fri, 30 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/date-process/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。&lt;/p&gt;
+      <description>&lt;p&gt;通常在处理地震数据（尤其是SAC数据）时需要计算不同时间戳（Time Stamp），本文给出一些示例。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -149,9 +257,7 @@
       <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/southkorea-earthquake/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;2016-09-12在韩国庆州境内发生两次地震，本文给出 &lt;strong&gt;CAP&lt;/strong&gt; 近震的机制解反演结果。&lt;/p&gt;
+      <description>&lt;p&gt;2016-09-12在韩国庆州境内发生两次地震，本文给出 &lt;strong&gt;CAP&lt;/strong&gt; 近震的机制解反演结果。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -162,9 +268,7 @@
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/hello-world/</guid>
-      <description>&lt;hr /&gt;
-
-&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦 😄&lt;/p&gt;
+      <description>&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦 😄&lt;/p&gt;
 
 &lt;p&gt;本博客始于 2016 年， 2018 年测试发布，主要关注地震学、计算机科学、深度学习、音乐与心理学的知识整理与分享。&lt;/p&gt;
 
@@ -172,12 +276,12 @@
     </item>
     
     <item>
-      <title>Qipeng Bai&#39;s Blog</title>
+      <title>白起鹏的博客</title>
       <link>http://blog.baiqp.info/README/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://blog.baiqp.info/README/</guid>
-      <description>地震学、计算机科学 2016 年 你好！ 韩国地震CAP机制解 地震时间处理 2017 年 新西兰地震余震可视化 2018 年 顶级域名绑定 GitHub Pages Hugo安装配置 二级域名绑定 GitHub Pages</description>
+      <description>自然科学 地震学 新西兰地震余震可视化 计算机科学 顶级域名绑定 GitHub Pages Hugo安装配置 二级域名绑定 GitHub Pages 物理学 数学 其他 博客框架 你好 韩国地震CAP机制解 地</description>
     </item>
     
   </channel>
