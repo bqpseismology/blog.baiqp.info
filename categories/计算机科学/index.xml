@@ -7,28 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Thu, 03 May 2018 01:04:12 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>虚拟机环境安装 CentOS</title>
-      <link>http://blog.baiqp.info/centos-vmware/</link>
-      <pubDate>Thu, 03 May 2018 01:04:12 +0800</pubDate>
-      
-      <guid>http://blog.baiqp.info/centos-vmware/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>人工智能--三级学科汇总</title>
-      <link>http://blog.baiqp.info/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</link>
-      <pubDate>Wed, 02 May 2018 01:11:42 +0800</pubDate>
-      
-      <guid>http://blog.baiqp.info/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>新西兰地震余震可视化</title>
