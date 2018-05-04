@@ -7,10 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Mon, 30 Apr 2018 15:45:21 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 May 2018 01:11:59 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>地震学--三级学科汇总</title>
+      <link>http://blog.baiqp.info/collections-seismology/</link>
+      <pubDate>Fri, 04 May 2018 01:11:59 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/collections-seismology/</guid>
+      <description>&lt;p&gt;本文主要内容包括：地震学重要概念、资源链接、地震学家、重要问题、研究专题、经典书籍及文章等。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAPtel 使用手册</title>
+      <link>http://blog.baiqp.info/cap-captel-manual/</link>
+      <pubDate>Wed, 02 May 2018 16:32:56 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/cap-captel-manual/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAP方法汇总</title>
+      <link>http://blog.baiqp.info/CAP%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Wed, 02 May 2018 01:11:52 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/CAP%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2018年4月25日 朱日祥院士 学术报告</title>
@@ -23,6 +52,24 @@
 主讲人：朱日祥 中国科学院院士、第三世界科学院院士、美国地球物理联合会会士&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何对地震学问题进行误差分析？</title>
+      <link>http://blog.baiqp.info/seismology-error-analysis/</link>
+      <pubDate>Mon, 30 Apr 2018 01:05:21 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/seismology-error-analysis/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAP gCAPjoint Manual</title>
+      <link>http://blog.baiqp.info/CAP-gCAPjoint-Manual/</link>
+      <pubDate>Fri, 20 Apr 2018 22:08:09 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/CAP-gCAPjoint-Manual/</guid>
+      <description>如果每个文档字数超过3000字，则单独出来作为独立内容。优化文章结构。 CAP方法原理 CAP方法软件安装汇总 依赖软件 CAP衍生及改进方法介绍 g</description>
     </item>
     
     <item>

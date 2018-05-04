@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Thu, 19 Apr 2018 15:13:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 03 May 2018 00:04:10 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MarkDown 基本语法</title>
+      <link>http://blog.baiqp.info/markdown-basic-grammar/</link>
+      <pubDate>Thu, 03 May 2018 00:04:10 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/markdown-basic-grammar/</guid>
+      <description>&lt;p&gt;Markdown 是一种轻型标记语言&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Overleaf 撰写 LaTex 文档</title>
+      <link>http://blog.baiqp.info/%E4%BD%BF%E7%94%A8-Overleaf-%E6%92%B0%E5%86%99-LaTex-%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Fri, 20 Apr 2018 22:08:09 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E4%BD%BF%E7%94%A8-Overleaf-%E6%92%B0%E5%86%99-LaTex-%E6%96%87%E6%A1%A3/</guid>
+      <description>Overleaf 是一个网页版 LaTex 编辑工具，里面有大量的模版可以使用，极大的方便了科研工作。 这里通过学习使用相关的内容，有助于我们的科研工作。 Overleaf 使用介绍 在官网</description>
+    </item>
     
     <item>
       <title>使用 MkDocs 撰写文档手册</title>
@@ -30,6 +50,19 @@
       
       <guid>http://blog.baiqp.info/hugo-centos/</guid>
       <description>&lt;p&gt;&lt;code&gt;Hugo&lt;/code&gt; 是由 Go 语言实现的静态网站生成器。简单易用、高效、易扩展、快速部署。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你好！</title>
+      <link>http://blog.baiqp.info/hello-world/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/hello-world/</guid>
+      <description>&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦 😄&lt;/p&gt;
+
+&lt;p&gt;本博客始于 2016 年， 2018 年测试发布，主要关注地震学、计算机科学（深度学习）、心理学，其他学科等的知识分享。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

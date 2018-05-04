@@ -7,10 +7,68 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Tue, 01 May 2018 12:01:01 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 May 2018 01:11:59 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>地震学--三级学科汇总</title>
+      <link>http://blog.baiqp.info/collections-seismology/</link>
+      <pubDate>Fri, 04 May 2018 01:11:59 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/collections-seismology/</guid>
+      <description>&lt;p&gt;本文主要内容包括：地震学重要概念、资源链接、地震学家、重要问题、研究专题、经典书籍及文章等。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>虚拟机环境安装 CentOS</title>
+      <link>http://blog.baiqp.info/centos-vmware/</link>
+      <pubDate>Thu, 03 May 2018 01:04:12 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/centos-vmware/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MarkDown 基本语法</title>
+      <link>http://blog.baiqp.info/markdown-basic-grammar/</link>
+      <pubDate>Thu, 03 May 2018 00:04:10 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/markdown-basic-grammar/</guid>
+      <description>&lt;p&gt;Markdown 是一种轻型标记语言&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAPtel 使用手册</title>
+      <link>http://blog.baiqp.info/cap-captel-manual/</link>
+      <pubDate>Wed, 02 May 2018 16:32:56 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/cap-captel-manual/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAP方法汇总</title>
+      <link>http://blog.baiqp.info/CAP%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Wed, 02 May 2018 01:11:52 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/CAP%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>人工智能--三级学科汇总</title>
+      <link>http://blog.baiqp.info/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Wed, 02 May 2018 01:11:42 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD--%E4%B8%89%E7%BA%A7%E5%AD%A6%E7%A7%91%E6%B1%87%E6%80%BB/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>读书笔记汇总</title>
@@ -18,7 +76,7 @@
       <pubDate>Tue, 01 May 2018 12:01:01 +0800</pubDate>
       
       <guid>http://blog.baiqp.info/collections-books/</guid>
-      <description>&lt;p&gt;读书笔记链接汇总&lt;/p&gt;
+      <description>&lt;p&gt;本文汇总了过去的读书笔记，方便以后再次比较分析。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -58,6 +116,33 @@
 主讲人：朱日祥 中国科学院院士、第三世界科学院院士、美国地球物理联合会会士&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何对地震学问题进行误差分析？</title>
+      <link>http://blog.baiqp.info/seismology-error-analysis/</link>
+      <pubDate>Mon, 30 Apr 2018 01:05:21 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/seismology-error-analysis/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CAP gCAPjoint Manual</title>
+      <link>http://blog.baiqp.info/CAP-gCAPjoint-Manual/</link>
+      <pubDate>Fri, 20 Apr 2018 22:08:09 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/CAP-gCAPjoint-Manual/</guid>
+      <description>如果每个文档字数超过3000字，则单独出来作为独立内容。优化文章结构。 CAP方法原理 CAP方法软件安装汇总 依赖软件 CAP衍生及改进方法介绍 g</description>
+    </item>
+    
+    <item>
+      <title>使用 Overleaf 撰写 LaTex 文档</title>
+      <link>http://blog.baiqp.info/%E4%BD%BF%E7%94%A8-Overleaf-%E6%92%B0%E5%86%99-LaTex-%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Fri, 20 Apr 2018 22:08:09 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E4%BD%BF%E7%94%A8-Overleaf-%E6%92%B0%E5%86%99-LaTex-%E6%96%87%E6%A1%A3/</guid>
+      <description>Overleaf 是一个网页版 LaTex 编辑工具，里面有大量的模版可以使用，极大的方便了科研工作。 这里通过学习使用相关的内容，有助于我们的科研工作。 Overleaf 使用介绍 在官网</description>
     </item>
     
     <item>
@@ -111,6 +196,19 @@
       
       <guid>http://blog.baiqp.info/southkorea-earthquake/</guid>
       <description>&lt;p&gt;2016-09-12在韩国庆州境内发生两次地震，本文给出 &lt;strong&gt;CAP&lt;/strong&gt; 近震的机制解反演结果。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你好！</title>
+      <link>http://blog.baiqp.info/hello-world/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/hello-world/</guid>
+      <description>&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦 😄&lt;/p&gt;
+
+&lt;p&gt;本博客始于 2016 年， 2018 年测试发布，主要关注地震学、计算机科学（深度学习）、心理学，其他学科等的知识分享。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

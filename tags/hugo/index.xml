@@ -23,5 +23,18 @@
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>你好！</title>
+      <link>http://blog.baiqp.info/hello-world/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.baiqp.info/hello-world/</guid>
+      <description>&lt;p&gt;欢迎来到 &lt;strong&gt;白起鹏&lt;/strong&gt; 的个人博客。这时一个测试博客哦 😄&lt;/p&gt;
+
+&lt;p&gt;本博客始于 2016 年， 2018 年测试发布，主要关注地震学、计算机科学（深度学习）、心理学，其他学科等的知识分享。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
