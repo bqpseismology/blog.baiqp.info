@@ -9,6 +9,13 @@
 
 ## CAP改进方法设想
 
+### gCAPjoint 方法及其在帕米尔高原的应用
+
+[gCAPjoint方法手册](/cap-gcapjointmanual)
+
+
+
+
 -----
 
 ## CAPtel使用步骤说明

@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Fri, 04 May 2018 01:11:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 May 2018 21:38:02 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>绘制Web流程图</title>
+      <link>http://blog.baiqp.info/flowchart/</link>
+      <pubDate>Fri, 04 May 2018 21:38:02 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/flowchart/</guid>
+      <description>&lt;p&gt;本博客支持绘制Web流程图（&lt;a href=&#34;https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80/3160571?fromtitle=UML&amp;amp;fromid=446747&#34; target=&#34;_blank&#34;&gt;UML图&lt;/a&gt;），采用的是&lt;a href=&#34;https://github.com/adrai/flowchart.js&#34; target=&#34;_blank&#34;&gt;flowchart.js&lt;/a&gt;和&lt;a href=&#34;https://bramp.github.io/js-sequence-diagrams/&#34; target=&#34;_blank&#34;&gt;js-sequence-disgrams&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>地震学--三级学科汇总</title>
@@ -211,6 +222,125 @@
 &lt;p&gt;本博客始于 2016 年， 2018 年测试发布，主要关注地震学、计算机科学（深度学习）、心理学，其他学科等的知识分享。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 流程图</title>
+      <link>http://blog.baiqp.info/JS-%E6%B5%81%E7%A8%8B%E5%9B%BE/</link>
+      <pubDate>Fri, 01 Jan 2016 21:57:50 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/JS-%E6%B5%81%E7%A8%8B%E5%9B%BE/</guid>
+      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-flowchart&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
+e=&amp;gt;end: End:&amp;gt;http://www.google.com
+op1=&amp;gt;operation: My Operation|past
+op2=&amp;gt;operation: Stuff|current
+sub1=&amp;gt;subroutine: My Subroutine|invalid
+cond=&amp;gt;condition: Yes
+or No?|approved:&amp;gt;http://www.google.com
+c2=&amp;gt;condition: Good idea|rejected
+io=&amp;gt;inputoutput: catch something...|request
+
+st-&amp;gt;op1(right)-&amp;gt;cond
+cond(yes, right)-&amp;gt;c2
+cond(no)-&amp;gt;sub1(left)-&amp;gt;op1
+c2(yes)-&amp;gt;io-&amp;gt;e
+c2(no)-&amp;gt;op2-&amp;gt;e
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS 序列图</title>
+      <link>http://blog.baiqp.info/JS-%E5%BA%8F%E5%88%97%E5%9B%BE/</link>
+      <pubDate>Fri, 01 Jan 2016 21:57:45 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/JS-%E5%BA%8F%E5%88%97%E5%9B%BE/</guid>
+      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sequence&#34;&gt;Andrew-&amp;gt;China: Says Hello
+Note right of China: China thinks\nabout it
+China--&amp;gt;Andrew: How are you?
+Andrew-&amp;gt;&amp;gt;China: I am good thanks!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>首页隐藏文档</title>
+      <link>http://blog.baiqp.info/%E9%A6%96%E9%A1%B5%E9%9A%90%E8%97%8F%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Fri, 01 Jan 2016 17:40:19 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E9%A6%96%E9%A1%B5%E9%9A%90%E8%97%8F%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>简码</title>
+      <link>http://blog.baiqp.info/%E7%AE%80%E7%A0%81/</link>
+      <pubDate>Fri, 01 Jan 2016 16:01:23 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E7%AE%80%E7%A0%81/</guid>
+      <description>&lt;h1 id=&#34;center-right-left&#34;&gt;center, right, left&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;## default
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+
+{{% center %}}
+## center
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+{{% /center %}}
+
+{{% right %}}
+## right
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+{{% /right %}}
+
+{{% left %}}
+## left
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+{{% /left %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>语法高亮</title>
+      <link>http://blog.baiqp.info/%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/</link>
+      <pubDate>Fri, 01 Jan 2016 16:01:23 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function helloWorld () {
+  alert(&amp;quot;Hello, World!&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[English] Creating a New Theme</title>
+      <link>http://blog.baiqp.info/English-Creating-a-New-Theme/</link>
+      <pubDate>Fri, 01 Jan 2016 15:43:48 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/English-Creating-a-New-Theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>[中文] 《长恨歌》</title>
+      <link>http://blog.baiqp.info/%E4%B8%AD%E6%96%87-%E9%95%BF%E6%81%A8%E6%AD%8C/</link>
+      <pubDate>Fri, 01 Jan 2016 01:37:56 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/%E4%B8%AD%E6%96%87-%E9%95%BF%E6%81%A8%E6%AD%8C/</guid>
+      <description>《长恨歌》是中国唐朝诗人白居易的一首长篇叙事诗。 第一段：贵妃受宠爱 汉皇重色思倾国，御宇多年求不得。杨家有女初长成，养在深闺人未识。 天生丽质难</description>
     </item>
     
   </channel>
