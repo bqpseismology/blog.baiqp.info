@@ -18,6 +18,7 @@
 - [MarkDown](https://markdown-zh.readthedocs.io/en/latest/)
 - [MarkDown 表情](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
 - [MkDocs](http://www.mkdocs.org/)
+- [MathJax](https://www.mathjax.org/)
 - _[GitBook](https://www.gitbook.com/)_
 - _[Read the Docs](https://readthedocs.com/)_
 - **[廖雪峰的官方网站](https://www.liaoxuefeng.com/)**
@@ -26,11 +27,11 @@
 
 ## 3. 地震学
 
-### 3.1 数据机构
+### 3.1 著名地震机构
 - [IRIS](http://www.iris.edu/hq/ "Incorporated Research Institutions for Seismology")
 - [USGS](https://www.usgs.gov "U.S. Geological Survey")
 - [GCMT](www.globalcmt.org "Global Centroid Moment Tensor")
-- []()
+- [SCEC](https://www.scec.org)
 
 ### 3.2 期刊
 

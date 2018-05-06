@@ -7,20 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Qipeng Bai (All right reserved)</copyright>
-    <lastBuildDate>Fri, 04 May 2018 01:11:59 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 May 2018 08:32:46 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.baiqp.info/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>地震学--三级学科汇总</title>
-      <link>http://blog.baiqp.info/collections-seismology/</link>
-      <pubDate>Fri, 04 May 2018 01:11:59 +0800</pubDate>
+      <title>首字母缩写和主题（Acronyms and titles）</title>
+      <link>http://blog.baiqp.info/seismology-acronyms/</link>
+      <pubDate>Sun, 06 May 2018 08:32:46 +0800</pubDate>
       
-      <guid>http://blog.baiqp.info/collections-seismology/</guid>
-      <description>&lt;p&gt;本文主要内容包括：地震学重要概念、资源链接、地震学家、重要问题、研究专题、经典书籍及文章等。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>http://blog.baiqp.info/seismology-acronyms/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>地震学前沿汇总</title>
+      <link>http://blog.baiqp.info/seismology-frontiers/</link>
+      <pubDate>Sat, 05 May 2018 13:58:49 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/seismology-frontiers/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,6 +37,17 @@
       
       <guid>http://blog.baiqp.info/cap-captel-manual/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>地震学--三级学科汇总</title>
+      <link>http://blog.baiqp.info/collections-seismology/</link>
+      <pubDate>Wed, 02 May 2018 01:11:59 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/collections-seismology/</guid>
+      <description>&lt;p&gt;本文主要内容包括：地震学重要概念、资源链接、地震学家、重要问题、研究专题、经典书籍及文章等。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

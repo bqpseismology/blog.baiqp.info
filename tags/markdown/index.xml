@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>MarkDown 基本语法</title>
-      <link>http://blog.baiqp.info/markdown-basic-grammar/</link>
+      <title>博客MarkDown语法</title>
+      <link>http://blog.baiqp.info/theme-markdown-grammar/</link>
       <pubDate>Thu, 03 May 2018 00:04:10 +0800</pubDate>
       
-      <guid>http://blog.baiqp.info/markdown-basic-grammar/</guid>
-      <description>&lt;p&gt;Markdown 是一种轻型标记语言&lt;/p&gt;
+      <guid>http://blog.baiqp.info/theme-markdown-grammar/</guid>
+      <description>&lt;p&gt;本文整理了 MarkDown 基本语法，以及博客主题的语法扩展和限值。在日常编辑中，注意书写规则的统一、清晰、简洁。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

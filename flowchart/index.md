@@ -129,4 +129,5 @@ Note over A,B: Note over both A and B
 
 ## 相关链接
 
-- 好用的工具 https://www.websequencediagrams.com/
+ - 好用的工具 https://www.websequencediagrams.com/
+ - JS MarkDown 编辑器 https://stackedit.io/
