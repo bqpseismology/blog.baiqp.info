@@ -12,3 +12,5 @@
 ## CentOS 
 
 CentOS 的安装可以参考 SeisMan 的系列博文 [CentOS 7 配置指南](http://blog.seisman.info/centos7-setup/)
+
+## 注意

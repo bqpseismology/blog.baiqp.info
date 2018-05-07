@@ -88,6 +88,4 @@ echo `date -d @$UTCtimestamp +"%Y %j %H %M %S"`
 fi
 ```
 
-通过上述两个shell脚本将标准时间和SAC中的时间进行互相转换，有效！
-
-## Reference:
+通过上述两个shell脚本将标准时间和SAC中的时间进行互相转换，输出结果可检验
