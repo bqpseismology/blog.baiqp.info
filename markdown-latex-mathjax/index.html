@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>MarkDown公式编辑 - Qipeng Bai</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Qipeng Bai" />
+  <meta name="description" content="在 MarkDown 文件中可以编辑公式，本文对博客框架下的公式编辑做了整理。
+
+" />
+
+  <meta name="keywords" content="地震学, 计算机科学" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.38.2" />
+
+
+<link rel="canonical" href="http://blog.baiqp.info/markdown-latex-mathjax/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="MarkDown公式编辑" />
+<meta property="og:description" content="在 MarkDown 文件中可以编辑公式，本文对博客框架下的公式编辑做了整理。
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.baiqp.info/markdown-latex-mathjax/" />
+
+
+
+<meta property="article:published_time" content="2018-05-04T22:42:41&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-05-04T22:42:41&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="MarkDown公式编辑">
+<meta itemprop="description" content="在 MarkDown 文件中可以编辑公式，本文对博客框架下的公式编辑做了整理。
+
+">
+
+
+<meta itemprop="datePublished" content="2018-05-04T22:42:41&#43;08:00" />
+<meta itemprop="dateModified" content="2018-05-04T22:42:41&#43;08:00" />
+<meta itemprop="wordCount" content="2101">
+
+
+
+<meta itemprop="keywords" content="latex,mathjax," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MarkDown公式编辑"/>
+<meta name="twitter:description" content="在 MarkDown 文件中可以编辑公式，本文对博客框架下的公式编辑做了整理。
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Qipeng Bai</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/collections/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/links/">
+        <li class="mobile-menu-item">链接</li>
+      </a><a href="/pdf/QipengBai-blog.pdf">
+        <li class="mobile-menu-item">下载</li>
+      </a><a href="/donations/">
+        <li class="mobile-menu-item">打赏</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Qipeng Bai</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/collections/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/links/">链接</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pdf/QipengBai-blog.pdf">下载</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/donations/">打赏</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">MarkDown公式编辑</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-05-04 </span>
+        <div class="post-category">
+            
+              <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/"> 博客框架 </a>
+            
+          </div>
+        <span class="more-meta"> 约 2101 字 </span>
+        <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-基本语法">1 基本语法</a>
+<ul>
+<li><a href="#1-1-呈现位置">1.1 呈现位置</a></li>
+</ul></li>
+<li><a href="#2-希腊字母">2 希腊字母</a></li>
+<li><a href="#3-字母修饰">3 字母修饰</a>
+<ul>
+<li><a href="#3-1-上下标">3.1 上下标</a></li>
+<li><a href="#3-2-矢量">3.2 矢量</a></li>
+<li><a href="#3-3-字体">3.3 字体</a></li>
+<li><a href="#3-4-分组">3.4 分组</a></li>
+<li><a href="#3-5-括号">3.5 括号</a></li>
+<li><a href="#3-6-求和-极限与积分">3.6 求和、极限与积分</a></li>
+<li><a href="#3-7-分式与根式">3.7 分式与根式</a></li>
+<li><a href="#3-8-特殊函数">3.8 特殊函数</a></li>
+<li><a href="#3-9-特殊符号">3.9 特殊符号</a></li>
+<li><a href="#3-10-空格">3.10 空格</a></li>
+</ul></li>
+<li><a href="#4-矩阵">4 矩阵</a>
+<ul>
+<li><a href="#4-1-基本语法">4.1 基本语法</a></li>
+<li><a href="#4-2-矩阵边框">4.2 矩阵边框</a></li>
+<li><a href="#4-3-省略元素">4.3 省略元素</a></li>
+<li><a href="#4-4-阵列">4.4 阵列</a></li>
+<li><a href="#4-5-方程组">4.5 方程组</a></li>
+</ul></li>
+<li><a href="#参考">参考</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>在 MarkDown 文件中可以编辑公式，本文对博客框架下的公式编辑做了整理。</p>
+
+<p></p>
+
+<h2 id="1-基本语法">1 基本语法</h2>
+
+<h3 id="1-1-呈现位置">1.1 呈现位置</h3>
+
+<ul>
+<li>正文(inline)中的LaTeX公式用<code>$...$</code>定义</li>
+<li>语句为<code>$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$</code></li>
+<li>显示在当前行内$\sum<em>{i=0}^N\int</em>{a}^{b}g(t,i)\text{d}t$</li>
+<li>单独显示(display)的LaTeX公式用<code>$$...$$</code>定义，此时公式居中并放大显示</li>
+<li>语句为<code>$$\sum_{i=0}^N\int_{a}{b}g(t,i)\text{d}t$$</code></li>
+<li>显示为
+$$\sum<em>{i=0}^N\int</em>{a}{b}g(t,i)\text{d}t$$</li>
+<li>下列描述语句中若非特别指出均省略<code>$...$</code></li>
+</ul>
+
+<h2 id="2-希腊字母">2 希腊字母</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">显示</th>
+<th align="left">命令</th>
+<th align="left">显示</th>
+<th align="left">命令</th>
+<th align="left">显示</th>
+<th align="left">命令</th>
+<th align="left">显示</th>
+<th align="left">命令</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">$\alpha$</td>
+<td align="left">\alpha</td>
+<td align="left">$\theta$</td>
+<td align="left">\theta</td>
+<td align="left">$o$</td>
+<td align="left">o</td>
+<td align="left">$\upsilon$</td>
+<td align="left">\upsilon</td>
+</tr>
+
+<tr>
+<td align="left">$\beta$</td>
+<td align="left">\beta</td>
+<td align="left">$\vartheta$</td>
+<td align="left">\vartheta</td>
+<td align="left">$\pi$</td>
+<td align="left">\pi</td>
+<td align="left">$\phi$</td>
+<td align="left">\phi</td>
+</tr>
+
+<tr>
+<td align="left">$\gamma$</td>
+<td align="left">\gamma</td>
+<td align="left">$\iota$</td>
+<td align="left">\iota</td>
+<td align="left">$\varpi$</td>
+<td align="left">\varpi</td>
+<td align="left">$\varphi$</td>
+<td align="left">\varphi</td>
+</tr>
+
+<tr>
+<td align="left">$\delta$</td>
+<td align="left">\delta</td>
+<td align="left">$\kappa$</td>
+<td align="left">\kappa</td>
+<td align="left">$\rho$</td>
+<td align="left">\rho</td>
+<td align="left">$\chi$</td>
+<td align="left">\chi</td>
+</tr>
+
+<tr>
+<td align="left">$\epsilon$</td>
+<td align="left">\epsilon</td>
+<td align="left">$\lambda$</td>
+<td align="left">\lambda</td>
+<td align="left">$\varrho$</td>
+<td align="left">\varrho</td>
+<td align="left">$\psi$</td>
+<td align="left">\psi</td>
+</tr>
+
+<tr>
+<td align="left">$\varepsilon$</td>
+<td align="left">\varepsilon</td>
+<td align="left">$\mu$</td>
+<td align="left">\mu</td>
+<td align="left">$\sigma$</td>
+<td align="left">\sigma</td>
+<td align="left">$\omega$</td>
+<td align="left">\omega</td>
+</tr>
+
+<tr>
+<td align="left">$\zeta$</td>
+<td align="left">\zeta</td>
+<td align="left">$\nu$</td>
+<td align="left">\nu</td>
+<td align="left">$\varsigma$</td>
+<td align="left">\varsigma</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">$\eta$</td>
+<td align="left">\eta</td>
+<td align="left">$\xi$</td>
+<td align="left">\xi</td>
+<td align="left">$\tau$</td>
+<td align="left">\tau</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">$\Gamma$</td>
+<td align="left">\Gamma</td>
+<td align="left">$\Lambda$</td>
+<td align="left">\Lambda</td>
+<td align="left">$\Sigma$</td>
+<td align="left">\Sigma</td>
+<td align="left">$\Psi$</td>
+<td align="left">\Psi</td>
+</tr>
+
+<tr>
+<td align="left">$\Delta$</td>
+<td align="left">\Delta</td>
+<td align="left">$\Xi$</td>
+<td align="left">\Xi</td>
+<td align="left">$\Upsilon$</td>
+<td align="left">\Upsilon</td>
+<td align="left">$\Omega$</td>
+<td align="left">\Omega</td>
+</tr>
+
+<tr>
+<td align="left">$\Theta$</td>
+<td align="left">\Theta</td>
+<td align="left">$\Pi$</td>
+<td align="left">\Pi</td>
+<td align="left">$\Phi$</td>
+<td align="left">\Phi</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">$\varGamma$</td>
+<td align="left">\varGamma</td>
+<td align="left">$\varLambda$</td>
+<td align="left">\varLambda</td>
+<td align="left">$\varSigma$</td>
+<td align="left">\varSigma</td>
+<td align="left">$\varPsi$</td>
+<td align="left">\varPsi</td>
+</tr>
+
+<tr>
+<td align="left">$\varDelta$</td>
+<td align="left">\varDelta</td>
+<td align="left">$\varXi$</td>
+<td align="left">\varXi</td>
+<td align="left">$\varUpsilon$</td>
+<td align="left">\varUpsilon</td>
+<td align="left">$\varOmega$</td>
+<td align="left">\varOmega</td>
+</tr>
+
+<tr>
+<td align="left">$\varTheta$</td>
+<td align="left">\varTheta</td>
+<td align="left">$\varPi$</td>
+<td align="left">\varPi</td>
+<td align="left">$\varPhi$</td>
+<td align="left">\varPhi</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>若需要大写希腊字母，将命令首字母大写即可。\Gamma呈现为
+$\Gamma$</li>
+<li>若需要斜体希腊字母，将命令前加上var前缀即可。\varGamma呈现为$\varGamma$</li>
+</ul>
+
+<p><strong>符号表</strong>可参考<a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/" target="_blank">一份不太简短的$\LaTeX\ 2\varepsilon$介绍</a>，章节4.9</p>
+
+<h2 id="3-字母修饰">3 字母修饰</h2>
+
+<h3 id="3-1-上下标">3.1 上下标</h3>
+
+<ul>
+<li>上标：<code>^</code></li>
+<li>下标：<code>_</code></li>
+</ul>
+
+<p>举例: <code>C_n^2</code>呈现为$C_n^2$</p>
+
+<h3 id="3-2-矢量">3.2 矢量</h3>
+
+<p><code>\vec a</code>呈现为$\vec a$</p>
+
+<p><code>\overrightarrow{xy}</code>呈现为$\overrightarrow{xy}$</p>
+
+<h3 id="3-3-字体">3.3 字体</h3>
+
+<ul>
+<li>Blackboard Bold: <code>\mathbb{A}</code>呈现为$\mathbb{A}$
+
+<ul>
+<li>$\mathbb{A}\mathbb{B}\mathbb{C}\mathbb{D}\mathbb{E}\mathbb{F}\mathbb{G}\mathbb{H}\mathbb{I}\mathbb{J}\mathbb{K}\mathbb{L}\mathbb{M}\mathbb{N}\mathbb{O}\mathbb{P}\mathbb{Q}\mathbb{R}\mathbb{S}\mathbb{T}\mathbb{U}\mathbb{V}\mathbb{W}\mathbb{X}\mathbb{Y}\mathbb{Z}$</li>
+</ul></li>
+<li>Boldface: <code>\mathbf{A}</code>呈现为$\mathbf{A}$</li>
+<li>Italic: <code>\mathit{A}</code>呈现为$\mathit{A}$</li>
+<li>Typewritr: <code>\mathtt{A}</code>呈现为$\mathtt{A}$</li>
+<li>Roman: <code>\mathrm{A}</code>呈现为$\mathrm{A}$</li>
+<li>Sans Serif: <code>\mathsf{A}</code>呈现为$\mathsf{A}$</li>
+<li>Calligraphic: <code>\mathcal{A}</code>呈现为$\mathcal{A}$</li>
+<li>Script: <code>\mathscr{A}</code>呈现为$\mathscr{A}$</li>
+<li>Fraktur: <code>\mathfrak{A}</code>呈现为$\mathfrak{A}$</li>
+</ul>
+
+<h3 id="3-4-分组">3.4 分组</h3>
+
+<ul>
+<li>使用<code>{}</code>将具有相同等级的内容扩入其中，成组处理</li>
+</ul>
+
+<p>举例：<code>10^{10}</code>呈现为$10^{10}$，而<code>10^10</code>呈现为$10^10$</p>
+
+<h3 id="3-5-括号">3.5 括号</h3>
+
+<ul>
+<li>小括号：<code>()</code>呈现为$()$</li>
+<li>中括号：<code>[]</code>呈现为$[]$</li>
+<li>尖括号：<code>\langle,\rangle</code>呈现为$\langle\rangle$
+
+<ul>
+<li>此处为与分组符号<code>{}</code>相区别，使用转义字符<code>\</code></li>
+</ul></li>
+<li>使用<code>\left(或\right)</code>使符号大小与邻近的公式相适应；该语句适用于所有括号类型
+
+<ul>
+<li><code>(\frac{x}{y})</code>呈现为$(\frac{x}{y})$</li>
+<li>而<code>\left(\frac{x}{y}\right)</code>呈现为$\left(\frac{x}{y}\right)$</li>
+</ul></li>
+</ul>
+
+<h3 id="3-6-求和-极限与积分">3.6 求和、极限与积分</h3>
+
+<ul>
+<li>求和：<code>\sum</code>
+
+<ul>
+<li>举例：<code>\sum_{i=1}^n{a_i}</code>呈现为$\sum_{i=1}^n{a_i}$</li>
+</ul></li>
+<li>极限：<code>\lim_{x\to 0}</code>呈现为$\lim_{x\to 0}$</li>
+<li>积分：<code>\int</code>
+
+<ul>
+<li>举例：<code>\int_0^\infty{fxdx}</code>呈现为$\int_0^\infty{fxdx}$</li>
+</ul></li>
+</ul>
+
+<h3 id="3-7-分式与根式">3.7 分式与根式</h3>
+
+<ul>
+<li>分式(fractions)：<code>\frac{formula1}{formula2}</code>呈现为$\frac{formula1}{formula2}$</li>
+<li>根式：<code>\sqrt[x]{y}</code>呈现为$\sqrt[x]{y}$</li>
+</ul>
+
+<h3 id="3-8-特殊函数">3.8 特殊函数</h3>
+
+<ul>
+<li><code>\函数名</code>
+
+<ul>
+<li>举例：<code>\sin x</code>，<code>\ln x</code>，<code>max(A,B,C)</code>呈现为$\sin x$，$\ln x$，$\max(A,B,C)$</li>
+</ul></li>
+</ul>
+
+<h3 id="3-9-特殊符号">3.9 特殊符号</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">显示</th>
+<th align="left">命令</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">$\infty$</td>
+<td align="left">\infty</td>
+</tr>
+
+<tr>
+<td align="left">$\cup$</td>
+<td align="left">\cup</td>
+</tr>
+
+<tr>
+<td align="left">$\cap$</td>
+<td align="left">\cap</td>
+</tr>
+
+<tr>
+<td align="left">$\subset$</td>
+<td align="left">\subset</td>
+</tr>
+
+<tr>
+<td align="left">$\subseteq$</td>
+<td align="left">\subseteq</td>
+</tr>
+
+<tr>
+<td align="left">$\supset$</td>
+<td align="left">\supset</td>
+</tr>
+
+<tr>
+<td align="left">$\in$</td>
+<td align="left">\in</td>
+</tr>
+
+<tr>
+<td align="left">$\notin$</td>
+<td align="left">\notin</td>
+</tr>
+
+<tr>
+<td align="left">$\varnothing$</td>
+<td align="left">\varnothing</td>
+</tr>
+
+<tr>
+<td align="left">$\forall$</td>
+<td align="left">\forall</td>
+</tr>
+
+<tr>
+<td align="left">$\exists$</td>
+<td align="left">\exists</td>
+</tr>
+
+<tr>
+<td align="left">$\lnot$</td>
+<td align="left">\lnot</td>
+</tr>
+
+<tr>
+<td align="left">$\nabla$</td>
+<td align="left">\nabla</td>
+</tr>
+
+<tr>
+<td align="left">$\partial$</td>
+<td align="left">\partial</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="3-10-空格">3.10 空格</h3>
+
+<ul>
+<li>LaTeX语法本身会忽略空格的存在</li>
+<li>小空格：<code>a\ b</code>呈现为$a\ b$</li>
+<li>4格空格：<code>a\quad b</code>呈现为$a\quad b$</li>
+</ul>
+
+<h2 id="4-矩阵">4 矩阵</h2>
+
+<h3 id="4-1-基本语法">4.1 基本语法</h3>
+
+<p>起始标记<code>\begin{matrix}</code>，结束标记<code>\end{matrix}</code><br />
+每一行末尾标记<code>\\\</code>，行间元素之间以<code>&amp;</code>分割</p>
+
+<p>举例：</p>
+
+<pre><code>$$\begin{matrix}
+1&amp;0&amp;0\\
+0&amp;1&amp;0\\
+0&amp;0&amp;1\\
+\end{matrix}$$
+</code></pre>
+
+<p>呈现为：
+$$\begin{matrix}
+1&amp;0&amp;0<br />
+0&amp;1&amp;0<br />
+0&amp;0&amp;1<br />
+\end{matrix}$$</p>
+
+<h3 id="4-2-矩阵边框">4.2 矩阵边框</h3>
+
+<ul>
+<li>在起始、结束标记处用下列词替换<code>matrix</code>
+
+<ul>
+<li><code>pmatrix</code>：小括号边框</li>
+<li><code>bmatrix</code>：中括号边框</li>
+<li><code>Bmatrix</code>：大括号边框</li>
+<li><code>vmatrix</code>：单竖线边框</li>
+<li><code>Vmatrix</code>：双竖线边框</li>
+</ul></li>
+</ul>
+
+<h3 id="4-3-省略元素">4.3 省略元素</h3>
+
+<ul>
+<li>横省略号：<code>\cdots</code></li>
+<li>竖省略号：<code>\vdots</code></li>
+<li>斜省略号：<code>\ddots</code></li>
+</ul>
+
+<p>举例：</p>
+
+<pre><code>$$\begin{bmatrix}
+{a_{11}}&amp;{a_{12}}&amp;{\cdots}&amp;{a_{1n}}\\
+{a_{21}}&amp;{a_{22}}&amp;{\cdots}&amp;{a_{2n}}\\
+{\vdots}&amp;{\vdots}&amp;{\ddots}&amp;{\vdots}\\
+{a_{m1}}&amp;{a_{m2}}&amp;{\cdots}&amp;{a_{mn}}\\
+\end{bmatrix}$$
+</code></pre>
+
+<p>呈现为：
+$$\begin{bmatrix}
+{a<em>{11}}&amp;{a</em>{12}}&amp;{\cdots}&amp;{a<em>{1n}}<br />
+{a</em>{21}}&amp;{a<em>{22}}&amp;{\cdots}&amp;{a</em>{2n}}<br />
+{\vdots}&amp;{\vdots}&amp;{\ddots}&amp;{\vdots}<br />
+{a<em>{m1}}&amp;{a</em>{m2}}&amp;{\cdots}&amp;{a_{mn}}<br />
+\end{bmatrix}$$</p>
+
+<h3 id="4-4-阵列">4.4 阵列</h3>
+
+<ul>
+<li>需要array环境：起始、结束处以<code>array</code>声明</li>
+<li>对齐方式：在<code>{array}</code>后以<code>{}</code>逐行统一声明
+
+<ul>
+<li>左对齐：<code>1</code>；居中：<code>c</code>；右对齐：<code>r</code></li>
+<li>竖直线：在声明对齐方式时，插入<code>|</code>建立竖直线</li>
+</ul></li>
+<li>插入水平线：<code>hline</code></li>
+</ul>
+
+<p>举例：</p>
+
+<pre><code>$$\begin{array}{c|lll}
+{↓}&amp;{a}&amp;{b}&amp;{c}\\
+\hline
+{R_1}&amp;{c}&amp;{b}&amp;{a}\\
+{R_2}&amp;{b}&amp;{c}&amp;{c}\\
+\end{array}$$
+</code></pre>
+
+<p>呈现为：</p>
+
+<p>$$
+\begin{array}{c|lll}
+{↓}&amp;{a}&amp;{b}&amp;{c}<br />
+\hline
+{R_1}&amp;{c}&amp;{b}&amp;{a}<br />
+{R_2}&amp;{b}&amp;{c}&amp;{c}<br />
+\end{array}
+$$</p>
+
+<h3 id="4-5-方程组">4.5 方程组</h3>
+
+<ul>
+<li>需要cases环境：起始、结束处以{cases}声明</li>
+</ul>
+
+<p>举例：</p>
+
+<pre><code>$$
+\begin{cases}
+a_1x+b_1y+c_1z=d_1\\
+a_2x+b_2y+c_2z=d_2\\
+a_3x+b_3y+c_3z=d_3\\
+\end{cases}
+$$
+</code></pre>
+
+<p>呈现为：
+$$
+\begin{cases}
+a_1x+b_1y+c_1z=d_1<br />
+a_2x+b_2y+c_2z=d_2<br />
+a_3x+b_3y+c_3z=d_3<br />
+\end{cases}
+$$</p>
+
+<hr />
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://forrestsu.github.io/2017/10/29/IT/%E5%9C%A8Markdown%E4%B8%AD%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F(MathJax)/" target="_blank">在Markdown中输入数学公式(MathJax)</a></li>
+<li><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank">MathJax basic tutorial and quick reference</a></li>
+<li><a href="https://www.mathelounge.de/509545/mathjax-latex-basic-tutorial-und-referenz-deutsch" target="_blank">MathJax: LaTeX Basic Tutorial und Referenz (Deutsch)</a></li>
+<li><a href="https://blog.csdn.net/u014630987/article/details/70156489" target="_blank">Markdown中Latex 数学公式基本语法</a></li>
+<li><a href="http://www.codecogs.com/latex/eqneditor.php" target="_blank">在线LaTeX 公式编辑器</a></li>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/chinese/" target="_blank">一份不太简短的$\LaTeX\ 2\varepsilon$介绍</a></li>
+</ul>
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Qipeng Bai</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-05-04</span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="http://blog.baiqp.info/markdown-latex-mathjax/index.md" target="_blank">Markdown »</a></span>
+    </p>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">打赏</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/wechatpay-qr-code.png">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/alipay-qr-code.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/latex/">latex</a>
+          
+          <a href="/tags/mathjax/">mathjax</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/seismology-frontiers/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">地震学前沿汇总</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/flowchart/">
+            <span class="next-text nav-default">绘制Web流程图</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:bqpseismology@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/bqpseismology" class="iconfont icon-github" title="github"></a>
+  <a href="http://blog.baiqp.info/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+    <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2016 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-pocket"></i>
+    </span>
+    <span class="author">Qipeng Bai (All right reserved)</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script><script></script>
+<script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script>
+<script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-117506279-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

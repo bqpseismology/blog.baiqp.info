@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathjax on Qipeng Bai</title>
+    <link>http://blog.baiqp.info/tags/mathjax/</link>
+    <description>Recent content in Mathjax on Qipeng Bai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Qipeng Bai (All right reserved)</copyright>
+    <lastBuildDate>Fri, 04 May 2018 22:42:41 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.baiqp.info/tags/mathjax/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MarkDown公式编辑</title>
+      <link>http://blog.baiqp.info/markdown-latex-mathjax/</link>
+      <pubDate>Fri, 04 May 2018 22:42:41 +0800</pubDate>
+      
+      <guid>http://blog.baiqp.info/markdown-latex-mathjax/</guid>
+      <description>&lt;p&gt;在 MarkDown 文件中可以编辑公式，本文对博客框架下的公式编辑做了整理。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
